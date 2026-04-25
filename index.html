@@ -3,1532 +3,1077 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🌟 Kiểm Tra Tiếng Anh Lớp 3 - Học Kỳ 2</title>
+<title>🌟 Đề Kiểm Tra Tiếng Anh Lớp 3 - Đề 1</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --sky: #87CEEB;
-    --sunny: #FFD93D;
-    --mint: #6BCB77;
-    --coral: #FF6B6B;
-    --lavender: #C77DFF;
-    --peach: #FFB347;
-    --cream: #FFF8F0;
-    --deep-blue: #1A3C5E;
-    --soft-gray: #F0F4F8;
-    --white: #FFFFFF;
-    --shadow: 0 4px 20px rgba(0,0,0,0.1);
-    --shadow-hover: 0 8px 30px rgba(0,0,0,0.18);
+    --purple: #7C3AED;
+    --purple-light: #EDE9FE;
+    --purple-mid: #A78BFA;
+    --green: #059669;
+    --green-light: #D1FAE5;
+    --red: #DC2626;
+    --red-light: #FEE2E2;
+    --yellow: #D97706;
+    --yellow-light: #FEF3C7;
+    --blue: #2563EB;
+    --blue-light: #DBEAFE;
+    --orange: #EA580C;
+    --orange-light: #FFEDD5;
+    --cream: #FFFBF5;
+    --gray-light: #F3F4F6;
+    --text-dark: #1E1B4B;
+    --text-mid: #4B5563;
+    --shadow: 0 4px 24px rgba(124,58,237,0.10);
+    --shadow-hover: 0 8px 32px rgba(124,58,237,0.18);
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #ffecd2 100%);
+    background: linear-gradient(160deg, #f0e7ff 0%, #fff7ed 50%, #e0f2fe 100%);
     min-height: 100vh;
-    padding: 20px;
-    overflow-x: hidden;
+    padding: 20px 14px 40px;
   }
 
-  /* Floating stars background */
-  body::before {
-    content: '⭐ 🌈 ✨ 🎉 ⭐ 🌟 🎈 ✨';
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 40px;
-    font-size: 20px;
-    letter-spacing: 80px;
-    opacity: 0.3;
-    pointer-events: none;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: floatAcross 20s linear infinite;
+  /* Decorative top banner */
+  .top-banner {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 12px;
+    margin-bottom: 18px;
+    animation: floatIcons 3s ease-in-out infinite;
+  }
+  @keyframes floatIcons {
+    0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)}
   }
 
-  @keyframes floatAcross {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(100%); }
-  }
+  .container { max-width: 800px; margin: 0 auto; }
 
-  .container {
-    max-width: 820px;
-    margin: 0 auto;
-  }
-
-  /* HEADER */
+  /* ── HEADER ── */
   .exam-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 24px;
-    padding: 28px 32px;
-    text-align: center;
-    color: white;
-    margin-bottom: 24px;
-    box-shadow: 0 8px 32px rgba(102,126,234,0.4);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .exam-header::before {
-    content: '';
-    position: absolute;
-    top: -50%; left: -50%;
-    width: 200%; height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 60%);
-    animation: shimmer 4s ease-in-out infinite;
-  }
-
-  @keyframes shimmer {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-  }
-
-  .header-emoji { font-size: 48px; display: block; margin-bottom: 8px; animation: bounce 2s ease-in-out infinite; }
-  @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-
-  .exam-title {
-    font-family: 'Baloo 2', cursive;
-    font-size: 28px;
-    font-weight: 800;
-    margin-bottom: 6px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  }
-
-  .exam-subtitle {
-    font-size: 15px;
-    opacity: 0.85;
-    font-weight: 600;
-  }
-
-  .exam-meta {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 16px;
-    flex-wrap: wrap;
-  }
-
-  .meta-badge {
-    background: rgba(255,255,255,0.2);
-    border: 2px solid rgba(255,255,255,0.4);
-    border-radius: 50px;
-    padding: 6px 16px;
-    font-size: 13px;
-    font-weight: 700;
-    backdrop-filter: blur(4px);
-  }
-
-  /* PROGRESS BAR */
-  .progress-section {
-    background: white;
-    border-radius: 16px;
-    padding: 16px 24px;
-    margin-bottom: 20px;
-    box-shadow: var(--shadow);
-  }
-
-  .progress-label {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #555;
-  }
-
-  .progress-bar-track {
-    background: #E8EDF2;
-    border-radius: 50px;
-    height: 14px;
-    overflow: hidden;
-  }
-
-  .progress-bar-fill {
-    height: 100%;
-    border-radius: 50px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    width: 0%;
-    transition: width 0.5s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .progress-bar-fill::after {
-    content: '';
-    position: absolute;
-    top: 0; left: -100%;
-    width: 100%; height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-    animation: progressShine 2s ease-in-out infinite;
-  }
-
-  @keyframes progressShine {
-    to { left: 100%; }
-  }
-
-  .progress-dots {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-top: 12px;
-  }
-
-  .progress-dot {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background: #E8EDF2;
-    border: 2px solid transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    font-weight: 800;
-    cursor: pointer;
-    transition: all 0.2s;
-    color: #999;
-  }
-
-  .progress-dot.answered { background: linear-gradient(135deg, #667eea, #764ba2); color: white; border-color: transparent; }
-  .progress-dot.current { border-color: #764ba2; box-shadow: 0 0 0 3px rgba(102,126,234,0.3); }
-
-  /* SECTION HEADERS */
-  .section-card {
-    background: white;
-    border-radius: 20px;
-    padding: 24px;
-    margin-bottom: 20px;
-    box-shadow: var(--shadow);
-    border-left: 6px solid transparent;
-  }
-
-  .section-card.listening { border-left-color: #FF6B6B; }
-  .section-card.reading { border-left-color: #6BCB77; }
-  .section-card.language { border-left-color: #FFD93D; }
-  .section-card.writing { border-left-color: #87CEEB; }
-
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 8px;
-  }
-
-  .section-icon {
-    width: 48px; height: 48px;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    flex-shrink: 0;
-  }
-
-  .listening .section-icon { background: #FFE5E5; }
-  .reading .section-icon { background: #E5F7E9; }
-  .language .section-icon { background: #FFF8DC; }
-  .writing .section-icon { background: #E5F3FD; }
-
-  .section-title {
-    font-family: 'Baloo 2', cursive;
-    font-size: 20px;
-    font-weight: 800;
-    color: var(--deep-blue);
-  }
-
-  .section-desc {
-    font-size: 13px;
-    color: #888;
-    font-weight: 600;
-    background: #F8F9FF;
-    border-radius: 10px;
-    padding: 8px 14px;
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-
-  /* QUESTION */
-  .question-block {
-    background: #FAFBFF;
-    border-radius: 16px;
-    padding: 20px;
-    margin-top: 16px;
-    border: 2px solid #EEF0F8;
-    transition: all 0.3s;
-  }
-
-  .question-block:hover {
-    border-color: #C5CAF0;
-    box-shadow: 0 4px 16px rgba(102,126,234,0.1);
-  }
-
-  .question-block.answered {
-    border-color: #A8D8A8;
-    background: #F5FBF5;
-  }
-
-  .question-num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px; height: 30px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    font-size: 13px;
-    font-weight: 800;
-    margin-right: 10px;
-    flex-shrink: 0;
-  }
-
-  .question-text {
-    font-size: 17px;
-    font-weight: 700;
-    color: #2D3748;
-    display: flex;
-    align-items: flex-start;
-    gap: 0;
-    margin-bottom: 16px;
-    line-height: 1.5;
-  }
-
-  .question-text-inner { flex: 1; }
-
-  /* Image placeholder */
-  .img-placeholder {
-    background: linear-gradient(135deg, #E8EAF6 0%, #EDE7F6 100%);
-    border-radius: 14px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 14px;
-    border: 2px dashed #B39DDB;
-    font-size: 36px;
-    color: #7E57C2;
-  }
-
-  .img-placeholder span { display: block; font-size: 13px; color: #9E86C8; font-weight: 600; margin-top: 6px; }
-
-  /* OPTIONS */
-  .options-grid {
-    display: grid;
-    gap: 10px;
-  }
-
-  .options-grid.cols-2 { grid-template-columns: 1fr 1fr; }
-  .options-grid.cols-1 { grid-template-columns: 1fr; }
-
-  .option-card {
-    background: white;
-    border: 2.5px solid #DDE2F0;
-    border-radius: 14px;
-    padding: 14px 18px;
-    cursor: pointer;
-    transition: all 0.25s;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #3D4A6B;
-    user-select: none;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .option-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, #667eea15, #764ba215);
-    opacity: 0;
-    transition: opacity 0.25s;
-  }
-
-  .option-card:hover { border-color: #8B95E0; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(102,126,234,0.2); }
-  .option-card:hover::before { opacity: 1; }
-
-  .option-card.selected {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-color: transparent;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102,126,234,0.4);
-  }
-
-  .option-card.selected::before { opacity: 0; }
-
-  .option-letter {
-    width: 32px; height: 32px;
-    border-radius: 50%;
-    background: #EEF0F8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 900;
-    font-size: 14px;
-    flex-shrink: 0;
-    color: #667eea;
-    transition: all 0.25s;
-  }
-
-  .option-card.selected .option-letter {
-    background: rgba(255,255,255,0.25);
-    color: white;
-  }
-
-  .option-emoji { font-size: 24px; }
-
-  /* Text input for writing */
-  .text-input-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
-    flex-wrap: wrap;
-  }
-
-  .text-input-label { font-size: 15px; font-weight: 700; color: #3D4A6B; flex-shrink: 0; }
-
-  .text-input {
-    flex: 1;
-    min-width: 120px;
-    border: 2.5px solid #DDE2F0;
-    border-radius: 10px;
-    padding: 8px 14px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    color: #2D3748;
-    outline: none;
-    transition: border-color 0.2s;
-    background: white;
-  }
-
-  .text-input:focus { border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.2); }
-
-  .word-bank {
-    background: #FFF8DC;
-    border-radius: 12px;
-    padding: 12px 16px;
-    margin-bottom: 14px;
-    border: 2px dashed #FFD93D;
-    font-size: 14px;
-  }
-
-  .word-bank-title { font-weight: 800; color: #856404; margin-bottom: 6px; }
-  .word-chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .word-chip {
-    background: white;
-    border: 2px solid #FFD93D;
-    border-radius: 50px;
-    padding: 4px 14px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #856404;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .word-chip:hover { background: #FFD93D; color: #5a4200; }
-
-  /* SUBMIT BUTTON */
-  .submit-section {
-    text-align: center;
-    margin: 30px 0;
-  }
-
-  .btn-submit {
-    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 18px 48px;
-    font-family: 'Baloo 2', cursive;
-    font-size: 20px;
-    font-weight: 800;
-    cursor: pointer;
-    box-shadow: 0 8px 24px rgba(255,107,107,0.4);
-    transition: all 0.3s;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    letter-spacing: 0.5px;
-  }
-
-  .btn-submit:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(255,107,107,0.5); }
-  .btn-submit:active { transform: translateY(0); }
-
-  .submit-warning {
-    margin-top: 12px;
-    font-size: 13px;
-    color: #999;
-    font-weight: 600;
-  }
-
-  /* RESULT MODAL */
-  .modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
-    backdrop-filter: blur(6px);
-    z-index: 1000;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    animation: fadeIn 0.3s ease;
-  }
-
-  .modal-overlay.show { display: flex; }
-
-  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-  .result-modal {
-    background: white;
+    background: linear-gradient(135deg, #7C3AED 0%, #4F46E5 60%, #2563EB 100%);
     border-radius: 28px;
-    padding: 40px 36px;
-    max-width: 480px;
-    width: 100%;
+    padding: 30px 28px 26px;
     text-align: center;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-    animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    color: #fff;
+    margin-bottom: 22px;
+    box-shadow: 0 10px 40px rgba(124,58,237,0.35);
     position: relative;
     overflow: hidden;
   }
-
-  @keyframes popIn {
-    from { transform: scale(0.5); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+  .exam-header::after {
+    content:'';
+    position:absolute;
+    width:260px;height:260px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.07);
+    top:-80px;right:-60px;
+    pointer-events:none;
+  }
+  .header-emoji { font-size:52px; display:block; margin-bottom:10px; animation:bounce 2s ease-in-out infinite; }
+  @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+  .exam-title { font-family:'Baloo 2',cursive; font-size:26px; font-weight:800; margin-bottom:5px; text-shadow:0 2px 8px rgba(0,0,0,.2); }
+  .exam-sub { font-size:14px; font-weight:600; opacity:.85; margin-bottom:16px; }
+  .meta-row { display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+  .meta-badge {
+    background:rgba(255,255,255,.18);
+    border:2px solid rgba(255,255,255,.35);
+    border-radius:50px;
+    padding:6px 18px;
+    font-size:13px; font-weight:800;
+    backdrop-filter:blur(4px);
   }
 
-  .result-modal::before {
-    content: '🎊';
-    position: absolute;
-    font-size: 100px;
-    opacity: 0.05;
-    top: -20px; right: -20px;
+  /* ── PROGRESS ── */
+  .progress-card {
+    background:#fff;
+    border-radius:18px;
+    padding:16px 22px;
+    margin-bottom:20px;
+    box-shadow:var(--shadow);
+  }
+  .prog-label { display:flex; justify-content:space-between; margin-bottom:9px; font-size:14px; font-weight:800; color:var(--text-mid); }
+  .prog-track { background:#EDE9FE; border-radius:50px; height:13px; overflow:hidden; }
+  .prog-fill {
+    height:100%; border-radius:50px;
+    background:linear-gradient(90deg,#7C3AED,#2563EB);
+    width:0%; transition:width .5s ease;
+    position:relative; overflow:hidden;
+  }
+  .prog-fill::after {
+    content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+    animation:shine 2s ease-in-out infinite;
+  }
+  @keyframes shine{to{left:100%}}
+  .dot-row { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
+  .pdot {
+    width:30px;height:30px;border-radius:50%;
+    background:#EDE9FE;border:2px solid transparent;
+    display:flex;align-items:center;justify-content:center;
+    font-size:11px;font-weight:800;color:#A78BFA;
+    cursor:pointer;transition:all .2s;
+  }
+  .pdot.done  { background:linear-gradient(135deg,#7C3AED,#2563EB); color:#fff; }
+  .pdot.now   { border-color:#7C3AED; box-shadow:0 0 0 3px rgba(124,58,237,.25); }
+
+  /* ── SECTION CARD ── */
+  .section-card {
+    background:#fff;
+    border-radius:22px;
+    padding:24px 22px;
+    margin-bottom:22px;
+    box-shadow:var(--shadow);
+    border-left:6px solid var(--purple);
+  }
+  .section-card.sec-I  { border-left-color:#EA580C; }
+  .section-card.sec-II { border-left-color:#059669; }
+  .section-card.sec-III{ border-left-color:#2563EB; }
+  .section-card.sec-V  { border-left-color:#D97706; }
+
+  .sec-head { display:flex; align-items:center; gap:12px; margin-bottom:6px; }
+  .sec-icon {
+    width:48px;height:48px;border-radius:14px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:24px;flex-shrink:0;
+  }
+  .sec-I  .sec-icon { background:#FFEDD5; }
+  .sec-II .sec-icon { background:#D1FAE5; }
+  .sec-III .sec-icon { background:#DBEAFE; }
+  .sec-V  .sec-icon { background:#FEF3C7; }
+
+  .sec-title { font-family:'Baloo 2',cursive; font-size:19px; font-weight:800; color:var(--text-dark); }
+  .sec-desc {
+    font-size:13px; color:var(--text-mid); font-weight:700;
+    background:var(--gray-light); border-radius:10px;
+    padding:8px 14px; margin-top:10px;
   }
 
-  .result-emoji { font-size: 72px; display: block; margin-bottom: 12px; animation: bounce 1s ease-in-out infinite; }
-
-  .result-title {
-    font-family: 'Baloo 2', cursive;
-    font-size: 28px;
-    font-weight: 800;
-    color: var(--deep-blue);
-    margin-bottom: 8px;
+  /* ── QUESTION BLOCK ── */
+  .qblock {
+    background:#FAFBFF;
+    border:2px solid #E5E7EB;
+    border-radius:16px;
+    padding:18px 18px 14px;
+    margin-top:14px;
+    transition:all .25s;
   }
+  .qblock:hover { border-color:#C4B5FD; box-shadow:0 4px 16px rgba(124,58,237,.09); }
+  .qblock.answered { border-color:#A7F3D0; background:#F0FDF9; }
 
-  .result-score {
-    font-size: 56px;
-    font-weight: 900;
-    font-family: 'Baloo 2', cursive;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    line-height: 1;
-    margin: 12px 0;
+  .q-label {
+    display:inline-flex; align-items:center; justify-content:center;
+    width:30px;height:30px;border-radius:50%;
+    background:linear-gradient(135deg,#7C3AED,#2563EB);
+    color:#fff;font-size:13px;font-weight:900;
+    margin-right:9px; flex-shrink:0;
   }
-
-  .result-msg {
-    font-size: 17px;
-    font-weight: 700;
-    color: #667;
-    margin-bottom: 24px;
-    line-height: 1.5;
+  .q-text {
+    display:flex;align-items:flex-start;
+    font-size:16px;font-weight:700;color:#1E1B4B;
+    margin-bottom:14px;line-height:1.5;
   }
+  .q-text-inner { flex:1; }
 
-  .result-stars {
-    font-size: 32px;
-    letter-spacing: 8px;
-    margin-bottom: 20px;
-    animation: starPulse 1.5s ease-in-out infinite;
+  /* ── OPTIONS ── */
+  .opts { display:grid; gap:9px; }
+  .opts.c2 { grid-template-columns:1fr 1fr; }
+  .opts.c1 { grid-template-columns:1fr; }
+
+  .opt {
+    background:#fff; border:2.5px solid #DDE0F0;
+    border-radius:13px; padding:13px 16px;
+    cursor:pointer; transition:all .22s;
+    display:flex; align-items:center; gap:11px;
+    font-size:15px; font-weight:700; color:#374151;
+    user-select:none; position:relative; overflow:hidden;
   }
-
-  @keyframes starPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
-
-  .result-breakdown {
-    background: #F8F9FF;
-    border-radius: 16px;
-    padding: 16px;
-    margin-bottom: 24px;
-    text-align: left;
+  .opt:hover { border-color:#A78BFA; transform:translateY(-2px); box-shadow:0 4px 14px rgba(124,58,237,.15); }
+  .opt.sel {
+    background:linear-gradient(135deg,#7C3AED,#4F46E5);
+    border-color:transparent; color:#fff;
+    transform:translateY(-2px);
+    box-shadow:0 6px 20px rgba(124,58,237,.38);
   }
-
-  .breakdown-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 6px 0;
-    border-bottom: 1px solid #EEF0F8;
-    font-size: 14px;
-    font-weight: 700;
-    color: #555;
+  .opt-letter {
+    width:30px;height:30px;border-radius:50%;
+    background:#EDE9FE; display:flex; align-items:center;
+    justify-content:center; font-weight:900; font-size:13px;
+    color:#7C3AED; flex-shrink:0; transition:all .22s;
   }
+  .opt.sel .opt-letter { background:rgba(255,255,255,.25); color:#fff; }
 
-  .breakdown-row:last-child { border-bottom: none; }
-  .breakdown-score { color: var(--deep-blue); font-size: 15px; }
+  /* Review states */
+  .opt.correct  { background:linear-gradient(135deg,#059669,#047857)!important; border-color:transparent!important; color:#fff!important; box-shadow:0 4px 16px rgba(5,150,105,.35)!important; pointer-events:none; }
+  .opt.wrong    { background:linear-gradient(135deg,#DC2626,#B91C1C)!important; border-color:transparent!important; color:#fff!important; text-decoration:line-through; opacity:.85; pointer-events:none; }
+  .opt.correct .opt-letter,
+  .opt.wrong   .opt-letter { background:rgba(255,255,255,.28); color:#fff; }
+  .opt.disabled { pointer-events:none; }
 
+  /* Feedback pill */
+  .feedback {
+    display:none; margin-top:10px; padding:9px 14px;
+    border-radius:10px; font-size:14px; font-weight:700;
+    align-items:center; gap:8px;
+  }
+  .feedback.ok  { background:#D1FAE5; color:#065F46; display:flex; }
+  .feedback.err { background:#FEE2E2; color:#991B1B; display:flex; }
+
+  /* ── READING PASSAGE ── */
+  .passage {
+    background:linear-gradient(135deg,#EFF6FF,#DBEAFE);
+    border:2px solid #93C5FD; border-radius:16px;
+    padding:18px 20px; margin-bottom:16px;
+    font-size:15px; line-height:1.9; color:#1E3A5F; font-weight:600;
+  }
+  .passage-title { font-weight:900; font-size:16px; margin-bottom:10px; color:#1D4ED8; }
+
+  /* ── YES / NO BUTTONS ── */
+  .yn-row {
+    display:flex; gap:10px; margin-top:2px; flex-wrap:wrap;
+  }
+  .yn-btn {
+    padding:9px 28px; border-radius:50px; border:2.5px solid #DDE0F0;
+    font-family:'Nunito',sans-serif; font-size:15px; font-weight:800;
+    cursor:pointer; transition:all .22s; background:#fff; color:#374151;
+  }
+  .yn-btn:hover { border-color:#A78BFA; }
+  .yn-btn.sel-yes { background:linear-gradient(135deg,#059669,#047857); color:#fff; border-color:transparent; box-shadow:0 4px 14px rgba(5,150,105,.3); }
+  .yn-btn.sel-no  { background:linear-gradient(135deg,#DC2626,#B91C1C); color:#fff; border-color:transparent; box-shadow:0 4px 14px rgba(220,38,38,.3); }
+  .yn-btn.correct-yes { background:linear-gradient(135deg,#059669,#047857)!important; color:#fff!important; border-color:transparent!important; pointer-events:none; }
+  .yn-btn.correct-no  { background:linear-gradient(135deg,#DC2626,#B91C1C)!important; color:#fff!important; border-color:transparent!important; pointer-events:none; }
+  .yn-btn.wrong-choice{ opacity:.5; text-decoration:line-through; pointer-events:none; }
+  .yn-btn.disabled { pointer-events:none; }
+
+  /* ── REORDER (Section V) ── */
+  .reorder-area {
+    margin-top:6px;
+  }
+  .word-chips-row {
+    display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px;
+  }
+  .wchip {
+    background:#FEF3C7; border:2px solid #FCD34D;
+    border-radius:50px; padding:6px 16px;
+    font-size:14px; font-weight:800; color:#92400E;
+    cursor:pointer; transition:all .2s; user-select:none;
+  }
+  .wchip:hover { background:#FCD34D; }
+  .wchip.used  { opacity:.35; pointer-events:none; text-decoration:line-through; }
+
+  .answer-box {
+    min-height:46px; border:2.5px dashed #FCD34D;
+    border-radius:12px; padding:8px 14px;
+    display:flex; flex-wrap:wrap; gap:6px; align-items:center;
+    background:#FFFBEB; cursor:pointer;
+    font-size:15px; font-weight:700; color:#374151;
+  }
+  .answer-box.has-content { border-style:solid; border-color:#FCD34D; }
+  .placed-word {
+    background:#FCD34D; border-radius:50px;
+    padding:4px 14px; font-size:14px; font-weight:800;
+    color:#92400E; cursor:pointer; transition:all .2s;
+  }
+  .placed-word:hover { background:#F59E0B; }
+  .box-hint { font-size:13px; color:#9CA3AF; font-style:italic; }
+
+  /* correct / wrong answer box */
+  .answer-box.correct-box { background:#D1FAE5; border-color:#059669!important; border-style:solid!important; }
+  .answer-box.wrong-box   { background:#FEE2E2; border-color:#DC2626!important; border-style:solid!important; }
+  .correct-ans-text { font-size:13px; font-weight:700; color:#065F46; margin-top:6px; }
+  .wrong-ans-text   { font-size:13px; font-weight:700; color:#991B1B; margin-top:6px; }
+
+  /* ── SUBMIT ── */
+  .submit-wrap { text-align:center; margin:28px 0 8px; }
+  .btn-submit {
+    background:linear-gradient(135deg,#EA580C,#DC2626);
+    color:#fff; border:none; border-radius:50px;
+    padding:18px 52px;
+    font-family:'Baloo 2',cursive; font-size:20px; font-weight:800;
+    cursor:pointer; box-shadow:0 8px 26px rgba(234,88,12,.38);
+    transition:all .3s; display:inline-flex; align-items:center; gap:10px;
+  }
+  .btn-submit:hover { transform:translateY(-4px); box-shadow:0 12px 34px rgba(234,88,12,.45); }
+  .submit-warn { margin-top:10px; font-size:13px; color:#9CA3AF; font-weight:700; }
+
+  /* ── MODAL ── */
+  .overlay {
+    position:fixed; inset:0;
+    background:rgba(0,0,0,.52); backdrop-filter:blur(7px);
+    z-index:1000; display:none; align-items:center;
+    justify-content:center; padding:20px;
+  }
+  .overlay.show { display:flex; }
+  .modal {
+    background:#fff; border-radius:28px; padding:38px 32px;
+    max-width:460px; width:100%; text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+    animation:popIn .4s cubic-bezier(.34,1.56,.64,1);
+  }
+  @keyframes popIn { from{transform:scale(.5);opacity:0} to{transform:scale(1);opacity:1} }
+  .m-emoji  { font-size:70px; display:block; margin-bottom:10px; animation:bounce 1.2s ease-in-out infinite; }
+  .m-title  { font-family:'Baloo 2',cursive; font-size:26px; font-weight:800; color:var(--text-dark); margin-bottom:6px; }
+  .m-score  {
+    font-size:54px; font-weight:900; font-family:'Baloo 2',cursive;
+    background:linear-gradient(135deg,#7C3AED,#2563EB);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    line-height:1; margin:12px 0;
+  }
+  .m-stars  { font-size:30px; letter-spacing:8px; margin-bottom:10px; }
+  .m-msg    { font-size:16px; font-weight:700; color:#6B7280; margin-bottom:20px; line-height:1.5; }
+  .m-breakdown {
+    background:var(--gray-light); border-radius:14px;
+    padding:14px; margin-bottom:22px; text-align:left;
+  }
+  .m-row {
+    display:flex; justify-content:space-between;
+    padding:5px 0; border-bottom:1px solid #E5E7EB;
+    font-size:14px; font-weight:700; color:#555;
+  }
+  .m-row:last-child { border-bottom:none; }
+  .m-sc { color:var(--text-dark); font-size:15px; }
   .btn-review {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 14px 36px;
-    font-family: 'Baloo 2', cursive;
-    font-size: 17px;
-    font-weight: 800;
-    cursor: pointer;
-    box-shadow: 0 6px 20px rgba(102,126,234,0.4);
-    transition: all 0.3s;
-    margin-right: 10px;
+    background:linear-gradient(135deg,#7C3AED,#2563EB);
+    color:#fff;border:none;border-radius:50px;
+    padding:13px 32px;
+    font-family:'Baloo 2',cursive;font-size:17px;font-weight:800;
+    cursor:pointer;box-shadow:0 6px 20px rgba(124,58,237,.35);
+    transition:all .3s; margin-right:8px;
   }
-
   .btn-retry {
-    background: linear-gradient(135deg, #6BCB77, #4CAF50);
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 14px 36px;
-    font-family: 'Baloo 2', cursive;
-    font-size: 17px;
-    font-weight: 800;
-    cursor: pointer;
-    box-shadow: 0 6px 20px rgba(107,203,119,0.4);
-    transition: all 0.3s;
-    margin-top: 10px;
+    background:linear-gradient(135deg,#059669,#047857);
+    color:#fff;border:none;border-radius:50px;
+    padding:13px 32px;
+    font-family:'Baloo 2',cursive;font-size:17px;font-weight:800;
+    cursor:pointer;box-shadow:0 6px 20px rgba(5,150,105,.35);
+    transition:all .3s; margin-top:10px;
   }
+  .btn-review:hover,.btn-retry:hover{transform:translateY(-3px);}
 
-  .btn-review:hover, .btn-retry:hover { transform: translateY(-3px); }
-
-  /* ANSWER KEY */
-  .answer-key-section { display: none; }
-  .answer-key-section.show { display: block; }
-
-  .answer-key-title {
-    font-family: 'Baloo 2', cursive;
-    font-size: 22px;
-    font-weight: 800;
-    color: var(--deep-blue);
-    text-align: center;
-    margin-bottom: 16px;
-    padding: 16px;
-    background: white;
-    border-radius: 16px;
-    box-shadow: var(--shadow);
+  /* answer key heading */
+  .ak-heading {
+    text-align:center;font-family:'Baloo 2',cursive;font-size:22px;font-weight:800;
+    color:var(--text-dark);padding:16px;background:#fff;
+    border-radius:16px;box-shadow:var(--shadow);margin-bottom:16px;
   }
+  .ak-section { display:none; }
+  .ak-section.show { display:block; }
 
-  .option-card.correct-ans {
-    background: linear-gradient(135deg, #6BCB77, #4CAF50) !important;
-    border-color: transparent !important;
-    color: white !important;
-    box-shadow: 0 4px 16px rgba(107,203,119,0.4) !important;
+  /* confetti */
+  .cfall{position:fixed;inset:0;pointer-events:none;z-index:999;}
+  .confetto{position:absolute;width:10px;height:10px;top:-10px;border-radius:2px;animation:fall linear forwards;}
+  @keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0;}}
+
+  @media(max-width:580px){
+    .opts.c2{grid-template-columns:1fr;}
+    .exam-title{font-size:20px;}
+    .m-score{font-size:42px;}
+    .btn-review,.btn-retry{padding:11px 22px;font-size:15px;}
   }
-
-  .option-card.wrong-ans {
-    background: linear-gradient(135deg, #FF6B6B, #FF8E53) !important;
-    border-color: transparent !important;
-    color: white !important;
-    text-decoration: line-through;
-    opacity: 0.85;
-  }
-
-  .option-card.correct-ans .option-letter,
-  .option-card.wrong-ans .option-letter {
-    background: rgba(255,255,255,0.3);
-    color: white;
-  }
-
-  .question-feedback {
-    display: none;
-    margin-top: 10px;
-    padding: 10px 16px;
-    border-radius: 10px;
-    font-size: 14px;
-    font-weight: 700;
-  }
-
-  .question-feedback.correct { background: #E5F7E9; color: #2E7D32; display: flex; align-items: center; gap: 8px; }
-  .question-feedback.incorrect { background: #FFEAEA; color: #C62828; display: flex; align-items: center; gap: 8px; }
-
-  /* Writing feedback */
-  .text-input.correct-text { border-color: #6BCB77; background: #F0FFF4; color: #2E7D32; }
-  .text-input.wrong-text { border-color: #FF6B6B; background: #FFF5F5; color: #C62828; }
-
-  /* Confetti */
-  .confetti-container {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 999;
-  }
-
-  .confetto {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: -10px;
-    border-radius: 2px;
-    animation: fall linear forwards;
-  }
-
-  @keyframes fall {
-    to {
-      transform: translateY(110vh) rotate(720deg);
-      opacity: 0;
-    }
-  }
-
-  /* Responsive */
-  @media (max-width: 600px) {
-    .options-grid.cols-2 { grid-template-columns: 1fr; }
-    .exam-title { font-size: 22px; }
-    .result-score { font-size: 44px; }
-    .btn-review, .btn-retry { padding: 12px 24px; font-size: 15px; }
-  }
-
-  /* disabled state */
-  .option-card.disabled { pointer-events: none; }
-  .text-input.disabled { pointer-events: none; }
-
-  /* listening instruction box */
-  .listen-box {
-    background: linear-gradient(135deg, #FFE5E5, #FFF5E5);
-    border: 2px dashed #FF6B6B;
-    border-radius: 14px;
-    padding: 14px 18px;
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #C0392B;
-  }
-
-  .listen-box .listen-icon { font-size: 28px; }
-
-  /* Reading passage */
-  .reading-passage {
-    background: linear-gradient(135deg, #F0FFF4, #E8F5E9);
-    border: 2px solid #A5D6A7;
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 1.8;
-    color: #2D4A32;
-    font-weight: 600;
-  }
-
-  .reading-passage strong { color: #1B5E20; font-size: 17px; }
-  .reading-passage p { margin-bottom: 8px; }
 </style>
 </head>
 <body>
 
 <div class="container">
 
+  <div class="top-banner">📚 ✏️ 🌈 ⭐ 🎒</div>
+
   <!-- HEADER -->
   <div class="exam-header">
-    <span class="header-emoji">📚</span>
-    <div class="exam-title">ĐỀ KIỂM TRA HỌC KỲ 2</div>
-    <div class="exam-subtitle">Tiếng Anh Lớp 3 · Bộ Sách Cánh Diều · Đề Số 1</div>
-    <div class="exam-meta">
-      <div class="meta-badge">⏱ 40 phút</div>
-      <div class="meta-badge">📝 20 câu hỏi</div>
+    <span class="header-emoji">🌟</span>
+    <div class="exam-title">ĐỀ KIỂM TRA TIẾNG ANH LỚP 3</div>
+    <div class="exam-sub">Học Kỳ 2 · Bộ Sách Cánh Diều · <strong>Đề Số 1</strong></div>
+    <div class="meta-row">
+      <div class="meta-badge">📝 19 câu hỏi</div>
       <div class="meta-badge">🏆 10 điểm</div>
+      <div class="meta-badge">⏱ 40 phút</div>
     </div>
   </div>
 
   <!-- PROGRESS -->
-  <div class="progress-section">
-    <div class="progress-label">
+  <div class="progress-card">
+    <div class="prog-label">
       <span>⚡ Tiến độ làm bài</span>
-      <span id="progressText">0 / 20 câu</span>
+      <span id="progText">0 / 19 câu</span>
     </div>
-    <div class="progress-bar-track">
-      <div class="progress-bar-fill" id="progressBar"></div>
-    </div>
-    <div class="progress-dots" id="progressDots"></div>
+    <div class="prog-track"><div class="prog-fill" id="progBar"></div></div>
+    <div class="dot-row" id="dotRow"></div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- PART 1: LISTENING -->
-  <!-- ============================================================ -->
-  <div class="section-card listening">
-    <div class="section-header">
-      <div class="section-icon">🎧</div>
-      <div>
-        <div class="section-title">Part 1: Listening – Nghe và chọn đáp án</div>
-      </div>
+  <!-- ════════════════════════════════════════
+       PART I – ODD ONE OUT
+  ════════════════════════════════════════ -->
+  <div class="section-card sec-I">
+    <div class="sec-head">
+      <div class="sec-icon">🦆</div>
+      <div class="sec-title">I. Odd one out</div>
     </div>
-    <div class="listen-box">
-      <span class="listen-icon">🔊</span>
-      <span>Nghe và chọn đáp án đúng (A, B, hoặc C) cho mỗi câu hỏi bên dưới.</span>
+    <p class="sec-desc">📌 Chọn từ <strong>KHÁC LOẠI</strong> với các từ còn lại trong mỗi câu.</p>
+
+    <!-- I.1 -->
+    <div class="qblock" id="q1">
+      <div class="q-text"><span class="q-label">1</span>
+        <span class="q-text-inner">Chọn từ khác loại:</span>
+      </div>
+      <div class="opts c2">
+        <div class="opt" data-q="1" data-v="A" onclick="pick(this)"><div class="opt-letter">A</div> lemonade 🍋</div>
+        <div class="opt" data-q="1" data-v="B" onclick="pick(this)"><div class="opt-letter">B</div> soda 🥤</div>
+        <div class="opt" data-q="1" data-v="C" onclick="pick(this)"><div class="opt-letter">C</div> milk 🥛</div>
+        <div class="opt" data-q="1" data-v="D" onclick="pick(this)"><div class="opt-letter">D</div> rice 🍚</div>
+      </div>
+      <div class="feedback" id="fb1"></div>
     </div>
 
-    <!-- Q1 -->
-    <div class="question-block" id="q1">
-      <div class="question-text">
-        <span class="question-num">1</span>
-        <span class="question-text-inner">What does the girl have for breakfast?</span>
+    <!-- I.2 -->
+    <div class="qblock" id="q2">
+      <div class="q-text"><span class="q-label">2</span>
+        <span class="q-text-inner">Chọn từ khác loại:</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="1" data-val="A" onclick="selectOption(this)">
-          <div class="option-letter">A</div>
-          <span class="option-emoji">🍞</span> Bread and milk
-        </div>
-        <div class="option-card" data-q="1" data-val="B" onclick="selectOption(this)">
-          <div class="option-letter">B</div>
-          <span class="option-emoji">🍚</span> Rice and fish
-        </div>
-        <div class="option-card" data-q="1" data-val="C" onclick="selectOption(this)">
-          <div class="option-letter">C</div>
-          <span class="option-emoji">🥞</span> Pancakes
-        </div>
-        <div class="option-card" data-q="1" data-val="D" onclick="selectOption(this)">
-          <div class="option-letter">D</div>
-          <span class="option-emoji">🥚</span> Eggs and juice
-        </div>
+      <div class="opts c2">
+        <div class="opt" data-q="2" data-v="A" onclick="pick(this)"><div class="opt-letter">A</div> toy 🧸</div>
+        <div class="opt" data-q="2" data-v="B" onclick="pick(this)"><div class="opt-letter">B</div> doll 🪆</div>
+        <div class="opt" data-q="2" data-v="C" onclick="pick(this)"><div class="opt-letter">C</div> car 🚗</div>
+        <div class="opt" data-q="2" data-v="D" onclick="pick(this)"><div class="opt-letter">D</div> kite 🪁</div>
       </div>
-      <div class="question-feedback" id="feedback1"></div>
+      <div class="feedback" id="fb2"></div>
     </div>
 
-    <!-- Q2 -->
-    <div class="question-block" id="q2">
-      <div class="question-text">
-        <span class="question-num">2</span>
-        <span class="question-text-inner">Where is the cat?</span>
+    <!-- I.3 -->
+    <div class="qblock" id="q3">
+      <div class="q-text"><span class="q-label">3</span>
+        <span class="q-text-inner">Chọn từ khác loại:</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="2" data-val="A" onclick="selectOption(this)">
-          <div class="option-letter">A</div>
-          <span class="option-emoji">🛏️</span> Under the bed
-        </div>
-        <div class="option-card" data-q="2" data-val="B" onclick="selectOption(this)">
-          <div class="option-letter">B</div>
-          <span class="option-emoji">🪑</span> On the chair
-        </div>
-        <div class="option-card" data-q="2" data-val="C" onclick="selectOption(this)">
-          <div class="option-letter">C</div>
-          <span class="option-emoji">🪟</span> Behind the window
-        </div>
-        <div class="option-card" data-q="2" data-val="D" onclick="selectOption(this)">
-          <div class="option-letter">D</div>
-          <span class="option-emoji">📦</span> In the box
-        </div>
+      <div class="opts c2">
+        <div class="opt" data-q="3" data-v="A" onclick="pick(this)"><div class="opt-letter">A</div> gloves 🧤</div>
+        <div class="opt" data-q="3" data-v="B" onclick="pick(this)"><div class="opt-letter">B</div> skirt 👗</div>
+        <div class="opt" data-q="3" data-v="C" onclick="pick(this)"><div class="opt-letter">C</div> closet 🚪</div>
+        <div class="opt" data-q="3" data-v="D" onclick="pick(this)"><div class="opt-letter">D</div> shirt 👕</div>
       </div>
-      <div class="question-feedback" id="feedback2"></div>
+      <div class="feedback" id="fb3"></div>
     </div>
 
-    <!-- Q3 -->
-    <div class="question-block" id="q3">
-      <div class="question-text">
-        <span class="question-num">3</span>
-        <span class="question-text-inner">How does the boy go to school?</span>
+    <!-- I.4 -->
+    <div class="qblock" id="q4">
+      <div class="q-text"><span class="q-label">4</span>
+        <span class="q-text-inner">Chọn từ khác loại:</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="3" data-val="A" onclick="selectOption(this)">
-          <div class="option-letter">A</div>
-          <span class="option-emoji">🚌</span> By bus
-        </div>
-        <div class="option-card" data-q="3" data-val="B" onclick="selectOption(this)">
-          <div class="option-letter">B</div>
-          <span class="option-emoji">🚲</span> By bike
-        </div>
-        <div class="option-card" data-q="3" data-val="C" onclick="selectOption(this)">
-          <div class="option-letter">C</div>
-          <span class="option-emoji">🚶</span> On foot
-        </div>
-        <div class="option-card" data-q="3" data-val="D" onclick="selectOption(this)">
-          <div class="option-letter">D</div>
-          <span class="option-emoji">🚗</span> By car
-        </div>
+      <div class="opts c2">
+        <div class="opt" data-q="4" data-v="A" onclick="pick(this)"><div class="opt-letter">A</div> strong 💪</div>
+        <div class="opt" data-q="4" data-v="B" onclick="pick(this)"><div class="opt-letter">B</div> mouth 👄</div>
+        <div class="opt" data-q="4" data-v="C" onclick="pick(this)"><div class="opt-letter">C</div> straight 📏</div>
+        <div class="opt" data-q="4" data-v="D" onclick="pick(this)"><div class="opt-letter">D</div> round ⭕</div>
       </div>
-      <div class="question-feedback" id="feedback3"></div>
+      <div class="feedback" id="fb4"></div>
     </div>
 
-    <!-- Q4 -->
-    <div class="question-block" id="q4">
-      <div class="question-text">
-        <span class="question-num">4</span>
-        <span class="question-text-inner">What is the weather like today?</span>
+    <!-- I.5 -->
+    <div class="qblock" id="q5">
+      <div class="q-text"><span class="q-label">5</span>
+        <span class="q-text-inner">Chọn từ khác loại:</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="4" data-val="A" onclick="selectOption(this)">
-          <div class="option-letter">A</div>
-          <span class="option-emoji">☀️</span> Sunny and hot
-        </div>
-        <div class="option-card" data-q="4" data-val="B" onclick="selectOption(this)">
-          <div class="option-letter">B</div>
-          <span class="option-emoji">🌧️</span> Rainy and cold
-        </div>
-        <div class="option-card" data-q="4" data-val="C" onclick="selectOption(this)">
-          <div class="option-letter">C</div>
-          <span class="option-emoji">🌤️</span> Cloudy and windy
-        </div>
-        <div class="option-card" data-q="4" data-val="D" onclick="selectOption(this)">
-          <div class="option-letter">D</div>
-          <span class="option-emoji">❄️</span> Snowy
-        </div>
+      <div class="opts c2">
+        <div class="opt" data-q="5" data-v="A" onclick="pick(this)"><div class="opt-letter">A</div> are</div>
+        <div class="opt" data-q="5" data-v="B" onclick="pick(this)"><div class="opt-letter">B</div> his</div>
+        <div class="opt" data-q="5" data-v="C" onclick="pick(this)"><div class="opt-letter">C</div> their</div>
+        <div class="opt" data-q="5" data-v="D" onclick="pick(this)"><div class="opt-letter">D</div> our</div>
       </div>
-      <div class="question-feedback" id="feedback4"></div>
-    </div>
-
-    <!-- Q5 -->
-    <div class="question-block" id="q5">
-      <div class="question-text">
-        <span class="question-num">5</span>
-        <span class="question-text-inner">What sport does the girl like?</span>
-      </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="5" data-val="A" onclick="selectOption(this)">
-          <div class="option-letter">A</div>
-          <span class="option-emoji">⚽</span> Football
-        </div>
-        <div class="option-card" data-q="5" data-val="B" onclick="selectOption(this)">
-          <div class="option-letter">B</div>
-          <span class="option-emoji">🏊</span> Swimming
-        </div>
-        <div class="option-card" data-q="5" data-val="C" onclick="selectOption(this)">
-          <div class="option-letter">C</div>
-          <span class="option-emoji">🎾</span> Tennis
-        </div>
-        <div class="option-card" data-q="5" data-val="D" onclick="selectOption(this)">
-          <div class="option-letter">D</div>
-          <span class="option-emoji">🏸</span> Badminton
-        </div>
-      </div>
-      <div class="question-feedback" id="feedback5"></div>
+      <div class="feedback" id="fb5"></div>
     </div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- PART 2: LANGUAGE FOCUS -->
-  <!-- ============================================================ -->
-  <div class="section-card language">
-    <div class="section-header">
-      <div class="section-icon">✏️</div>
-      <div>
-        <div class="section-title">Part 2: Language Focus – Ngữ pháp & Từ vựng</div>
-      </div>
+  <!-- ════════════════════════════════════════
+       PART II – CHOOSE THE BEST ANSWER
+  ════════════════════════════════════════ -->
+  <div class="section-card sec-II">
+    <div class="sec-head">
+      <div class="sec-icon">✅</div>
+      <div class="sec-title">II. Choose the best answer</div>
     </div>
-    <p class="section-desc">📌 Chọn đáp án đúng (A, B, C, hoặc D) để hoàn thành câu.</p>
+    <p class="sec-desc">📌 Chọn đáp án đúng nhất (A, B hoặc C) để hoàn thành mỗi câu.</p>
 
-    <!-- Q6 -->
-    <div class="question-block" id="q6">
-      <div class="question-text">
-        <span class="question-num">6</span>
-        <span class="question-text-inner">She _______ to school every day.</span>
+    <!-- II.1 -->
+    <div class="qblock" id="q6">
+      <div class="q-text"><span class="q-label">1</span>
+        <span class="q-text-inner">______ you want a kite?</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="6" data-val="A" onclick="selectOption(this)"><div class="option-letter">A</div> go</div>
-        <div class="option-card" data-q="6" data-val="B" onclick="selectOption(this)"><div class="option-letter">B</div> goes</div>
-        <div class="option-card" data-q="6" data-val="C" onclick="selectOption(this)"><div class="option-letter">C</div> going</div>
-        <div class="option-card" data-q="6" data-val="D" onclick="selectOption(this)"><div class="option-letter">D</div> gone</div>
+      <div class="opts c1">
+        <div class="opt" data-q="6" data-v="A" onclick="pick(this)"><div class="opt-letter">A</div> What</div>
+        <div class="opt" data-q="6" data-v="B" onclick="pick(this)"><div class="opt-letter">B</div> Are</div>
+        <div class="opt" data-q="6" data-v="C" onclick="pick(this)"><div class="opt-letter">C</div> Do</div>
       </div>
-      <div class="question-feedback" id="feedback6"></div>
+      <div class="feedback" id="fb6"></div>
     </div>
 
-    <!-- Q7 -->
-    <div class="question-block" id="q7">
-      <div class="question-text">
-        <span class="question-num">7</span>
-        <span class="question-text-inner">_______ your name? – My name is Lan.</span>
+    <!-- II.2 -->
+    <div class="qblock" id="q7">
+      <div class="q-text"><span class="q-label">2</span>
+        <span class="q-text-inner">She ______ a round face.</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="7" data-val="A" onclick="selectOption(this)"><div class="option-letter">A</div> How is</div>
-        <div class="option-card" data-q="7" data-val="B" onclick="selectOption(this)"><div class="option-letter">B</div> What's</div>
-        <div class="option-card" data-q="7" data-val="C" onclick="selectOption(this)"><div class="option-letter">C</div> Where's</div>
-        <div class="option-card" data-q="7" data-val="D" onclick="selectOption(this)"><div class="option-letter">D</div> Who are</div>
+      <div class="opts c1">
+        <div class="opt" data-q="7" data-v="A" onclick="pick(this)"><div class="opt-letter">A</div> has</div>
+        <div class="opt" data-q="7" data-v="B" onclick="pick(this)"><div class="opt-letter">B</div> having</div>
+        <div class="opt" data-q="7" data-v="C" onclick="pick(this)"><div class="opt-letter">C</div> have</div>
       </div>
-      <div class="question-feedback" id="feedback7"></div>
+      <div class="feedback" id="fb7"></div>
     </div>
 
-    <!-- Q8 -->
-    <div class="question-block" id="q8">
-      <div class="question-text">
-        <span class="question-num">8</span>
-        <span class="question-text-inner">There _______ two birds in the tree.</span>
+    <!-- II.3 -->
+    <div class="qblock" id="q8">
+      <div class="q-text"><span class="q-label">3</span>
+        <span class="q-text-inner">What ______ you ______?</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="8" data-val="A" onclick="selectOption(this)"><div class="option-letter">A</div> is</div>
-        <div class="option-card" data-q="8" data-val="B" onclick="selectOption(this)"><div class="option-letter">B</div> are</div>
-        <div class="option-card" data-q="8" data-val="C" onclick="selectOption(this)"><div class="option-letter">C</div> am</div>
-        <div class="option-card" data-q="8" data-val="D" onclick="selectOption(this)"><div class="option-letter">D</div> be</div>
+      <div class="opts c1">
+        <div class="opt" data-q="8" data-v="A" onclick="pick(this)"><div class="opt-letter">A</div> is – wearing</div>
+        <div class="opt" data-q="8" data-v="B" onclick="pick(this)"><div class="opt-letter">B</div> are – wear</div>
+        <div class="opt" data-q="8" data-v="C" onclick="pick(this)"><div class="opt-letter">C</div> are – wearing</div>
       </div>
-      <div class="question-feedback" id="feedback8"></div>
+      <div class="feedback" id="fb8"></div>
     </div>
 
-    <!-- Q9 -->
-    <div class="question-block" id="q9">
-      <div class="question-text">
-        <span class="question-num">9</span>
-        <span class="question-text-inner">_______ old are you? – I'm eight years old.</span>
+    <!-- II.4 -->
+    <div class="qblock" id="q9">
+      <div class="q-text"><span class="q-label">4</span>
+        <span class="q-text-inner">________ some soup.</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="9" data-val="A" onclick="selectOption(this)"><div class="option-letter">A</div> What</div>
-        <div class="option-card" data-q="9" data-val="B" onclick="selectOption(this)"><div class="option-letter">B</div> Where</div>
-        <div class="option-card" data-q="9" data-val="C" onclick="selectOption(this)"><div class="option-letter">C</div> How</div>
-        <div class="option-card" data-q="9" data-val="D" onclick="selectOption(this)"><div class="option-letter">D</div> Who</div>
+      <div class="opts c1">
+        <div class="opt" data-q="9" data-v="A" onclick="pick(this)"><div class="opt-letter">A</div> Is there</div>
+        <div class="opt" data-q="9" data-v="B" onclick="pick(this)"><div class="opt-letter">B</div> There is</div>
+        <div class="opt" data-q="9" data-v="C" onclick="pick(this)"><div class="opt-letter">C</div> There are</div>
       </div>
-      <div class="question-feedback" id="feedback9"></div>
+      <div class="feedback" id="fb9"></div>
     </div>
 
-    <!-- Q10 -->
-    <div class="question-block" id="q10">
-      <div class="question-text">
-        <span class="question-num">10</span>
-        <span class="question-text-inner">I _______ a dog and two cats at home.</span>
+    <!-- II.5 -->
+    <div class="qblock" id="q10">
+      <div class="q-text"><span class="q-label">5</span>
+        <span class="q-text-inner">What's your ______ food?</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="10" data-val="A" onclick="selectOption(this)"><div class="option-letter">A</div> has</div>
-        <div class="option-card" data-q="10" data-val="B" onclick="selectOption(this)"><div class="option-letter">B</div> have</div>
-        <div class="option-card" data-q="10" data-val="C" onclick="selectOption(this)"><div class="option-letter">C</div> is</div>
-        <div class="option-card" data-q="10" data-val="D" onclick="selectOption(this)"><div class="option-letter">D</div> are</div>
+      <div class="opts c1">
+        <div class="opt" data-q="10" data-v="A" onclick="pick(this)"><div class="opt-letter">A</div> favorite</div>
+        <div class="opt" data-q="10" data-v="B" onclick="pick(this)"><div class="opt-letter">B</div> strong</div>
+        <div class="opt" data-q="10" data-v="C" onclick="pick(this)"><div class="opt-letter">C</div> like</div>
       </div>
-      <div class="question-feedback" id="feedback10"></div>
-    </div>
-
-    <!-- Q11 -->
-    <div class="question-block" id="q11">
-      <div class="question-text">
-        <span class="question-num">11</span>
-        <span class="question-text-inner">My school _______ a big playground.</span>
-      </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="11" data-val="A" onclick="selectOption(this)"><div class="option-letter">A</div> have</div>
-        <div class="option-card" data-q="11" data-val="B" onclick="selectOption(this)"><div class="option-letter">B</div> has</div>
-        <div class="option-card" data-q="11" data-val="C" onclick="selectOption(this)"><div class="option-letter">C</div> is</div>
-        <div class="option-card" data-q="11" data-val="D" onclick="selectOption(this)"><div class="option-letter">D</div> are</div>
-      </div>
-      <div class="question-feedback" id="feedback11"></div>
-    </div>
-
-    <!-- Q12 -->
-    <div class="question-block" id="q12">
-      <div class="question-text">
-        <span class="question-num">12</span>
-        <span class="question-text-inner">_______ you like to play chess? – Yes, I do.</span>
-      </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="12" data-val="A" onclick="selectOption(this)"><div class="option-letter">A</div> Are</div>
-        <div class="option-card" data-q="12" data-val="B" onclick="selectOption(this)"><div class="option-letter">B</div> Is</div>
-        <div class="option-card" data-q="12" data-val="C" onclick="selectOption(this)"><div class="option-letter">C</div> Do</div>
-        <div class="option-card" data-q="12" data-val="D" onclick="selectOption(this)"><div class="option-letter">D</div> Does</div>
-      </div>
-      <div class="question-feedback" id="feedback12"></div>
+      <div class="feedback" id="fb10"></div>
     </div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- PART 3: READING -->
-  <!-- ============================================================ -->
-  <div class="section-card reading">
-    <div class="section-header">
-      <div class="section-icon">📖</div>
-      <div>
-        <div class="section-title">Part 3: Reading – Đọc hiểu</div>
-      </div>
+  <!-- ════════════════════════════════════════
+       PART III – READ AND WRITE YES OR NO
+  ════════════════════════════════════════ -->
+  <div class="section-card sec-III">
+    <div class="sec-head">
+      <div class="sec-icon">📖</div>
+      <div class="sec-title">III. Read and write Yes or No</div>
     </div>
-    <p class="section-desc">📌 Đọc đoạn văn và trả lời câu hỏi bên dưới.</p>
+    <p class="sec-desc">📌 Đọc đoạn văn rồi chọn <strong>Yes</strong> hoặc <strong>No</strong> cho mỗi câu.</p>
 
-    <div class="reading-passage">
-      <strong>Read about Nam's family:</strong><br><br>
-      <p>Hi! My name is Nam. I am eight years old. I live in Ha Noi. I have a small family. There are four people in my family: my father, my mother, my sister, and me.</p>
-      <p>My father is a doctor. He works at a big hospital. My mother is a teacher. She teaches English at a primary school. My sister is five years old. She is very cute.</p>
-      <p>My favourite subject is Maths. I also love PE because I enjoy playing football with my friends after school. Our family is very happy! 🏡</p>
+    <div class="passage">
+      <div class="passage-title">📝 Đọc đoạn văn sau:</div>
+      I am Jane. I'm wearing a white T-shirt, a blue skirt, white socks and black shoes. My hat is brown. I also have a kite. It's green. I love my kite. I like apples. There are some apples in the kitchen.
     </div>
 
-    <!-- Q13 -->
-    <div class="question-block" id="q13">
-      <div class="question-text">
-        <span class="question-num">13</span>
-        <span class="question-text-inner">How old is Nam?</span>
+    <!-- III.1 -->
+    <div class="qblock" id="q11">
+      <div class="q-text"><span class="q-label">1</span>
+        <span class="q-text-inner">I am wearing a blue dress.</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="13" data-val="A" onclick="selectOption(this)"><div class="option-letter">A</div> Five years old</div>
-        <div class="option-card" data-q="13" data-val="B" onclick="selectOption(this)"><div class="option-letter">B</div> Six years old</div>
-        <div class="option-card" data-q="13" data-val="C" onclick="selectOption(this)"><div class="option-letter">C</div> Eight years old</div>
-        <div class="option-card" data-q="13" data-val="D" onclick="selectOption(this)"><div class="option-letter">D</div> Ten years old</div>
+      <div class="yn-row">
+        <button class="yn-btn" data-q="11" data-v="Yes" onclick="pickYN(this)">✅ Yes</button>
+        <button class="yn-btn" data-q="11" data-v="No"  onclick="pickYN(this)">❌ No</button>
       </div>
-      <div class="question-feedback" id="feedback13"></div>
+      <div class="feedback" id="fb11"></div>
     </div>
 
-    <!-- Q14 -->
-    <div class="question-block" id="q14">
-      <div class="question-text">
-        <span class="question-num">14</span>
-        <span class="question-text-inner">What does Nam's father do?</span>
+    <!-- III.2 -->
+    <div class="qblock" id="q12">
+      <div class="q-text"><span class="q-label">2</span>
+        <span class="q-text-inner">I am wearing white socks and black shoes.</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="14" data-val="A" onclick="selectOption(this)"><div class="option-letter">A</div> He is a teacher.</div>
-        <div class="option-card" data-q="14" data-val="B" onclick="selectOption(this)"><div class="option-letter">B</div> He is a doctor.</div>
-        <div class="option-card" data-q="14" data-val="C" onclick="selectOption(this)"><div class="option-letter">C</div> He is a farmer.</div>
-        <div class="option-card" data-q="14" data-val="D" onclick="selectOption(this)"><div class="option-letter">D</div> He is a driver.</div>
+      <div class="yn-row">
+        <button class="yn-btn" data-q="12" data-v="Yes" onclick="pickYN(this)">✅ Yes</button>
+        <button class="yn-btn" data-q="12" data-v="No"  onclick="pickYN(this)">❌ No</button>
       </div>
-      <div class="question-feedback" id="feedback14"></div>
+      <div class="feedback" id="fb12"></div>
     </div>
 
-    <!-- Q15 -->
-    <div class="question-block" id="q15">
-      <div class="question-text">
-        <span class="question-num">15</span>
-        <span class="question-text-inner">What is Nam's favourite subject?</span>
+    <!-- III.3 -->
+    <div class="qblock" id="q13">
+      <div class="q-text"><span class="q-label">3</span>
+        <span class="q-text-inner">My hat is brown.</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="15" data-val="A" onclick="selectOption(this)"><div class="option-letter">A</div> English</div>
-        <div class="option-card" data-q="15" data-val="B" onclick="selectOption(this)"><div class="option-letter">B</div> Science</div>
-        <div class="option-card" data-q="15" data-val="C" onclick="selectOption(this)"><div class="option-letter">C</div> Maths</div>
-        <div class="option-card" data-q="15" data-val="D" onclick="selectOption(this)"><div class="option-letter">D</div> Art</div>
+      <div class="yn-row">
+        <button class="yn-btn" data-q="13" data-v="Yes" onclick="pickYN(this)">✅ Yes</button>
+        <button class="yn-btn" data-q="13" data-v="No"  onclick="pickYN(this)">❌ No</button>
       </div>
-      <div class="question-feedback" id="feedback15"></div>
+      <div class="feedback" id="fb13"></div>
     </div>
 
-    <!-- Q16 -->
-    <div class="question-block" id="q16">
-      <div class="question-text">
-        <span class="question-num">16</span>
-        <span class="question-text-inner">How many people are there in Nam's family?</span>
+    <!-- III.4 -->
+    <div class="qblock" id="q14">
+      <div class="q-text"><span class="q-label">4</span>
+        <span class="q-text-inner">I have a green kite.</span>
       </div>
-      <div class="options-grid cols-2">
-        <div class="option-card" data-q="16" data-val="A" onclick="selectOption(this)"><div class="option-letter">A</div> Three</div>
-        <div class="option-card" data-q="16" data-val="B" onclick="selectOption(this)"><div class="option-letter">B</div> Four</div>
-        <div class="option-card" data-q="16" data-val="C" onclick="selectOption(this)"><div class="option-letter">C</div> Five</div>
-        <div class="option-card" data-q="16" data-val="D" onclick="selectOption(this)"><div class="option-letter">D</div> Six</div>
+      <div class="yn-row">
+        <button class="yn-btn" data-q="14" data-v="Yes" onclick="pickYN(this)">✅ Yes</button>
+        <button class="yn-btn" data-q="14" data-v="No"  onclick="pickYN(this)">❌ No</button>
       </div>
-      <div class="question-feedback" id="feedback16"></div>
+      <div class="feedback" id="fb14"></div>
+    </div>
+
+    <!-- III.5 -->
+    <div class="qblock" id="q15">
+      <div class="q-text"><span class="q-label">5</span>
+        <span class="q-text-inner">There is an apple in the kitchen.</span>
+      </div>
+      <div class="yn-row">
+        <button class="yn-btn" data-q="15" data-v="Yes" onclick="pickYN(this)">✅ Yes</button>
+        <button class="yn-btn" data-q="15" data-v="No"  onclick="pickYN(this)">❌ No</button>
+      </div>
+      <div class="feedback" id="fb15"></div>
     </div>
   </div>
 
-  <!-- ============================================================ -->
-  <!-- PART 4: WRITING -->
-  <!-- ============================================================ -->
-  <div class="section-card writing">
-    <div class="section-header">
-      <div class="section-icon">🖊️</div>
-      <div>
-        <div class="section-title">Part 4: Writing – Hoàn thành câu</div>
-      </div>
+  <!-- ════════════════════════════════════════
+       PART V – REORDER WORDS
+  ════════════════════════════════════════ -->
+  <div class="section-card sec-V">
+    <div class="sec-head">
+      <div class="sec-icon">🔀</div>
+      <div class="sec-title">V. Reorder the words</div>
     </div>
-    <p class="section-desc">📌 Điền từ thích hợp vào chỗ trống để hoàn thành câu. Chọn từ trong ô bên dưới.</p>
+    <p class="sec-desc">📌 Bấm vào các từ theo đúng thứ tự để tạo thành câu hoàn chỉnh. Bấm vào từ đã chọn để bỏ chọn.</p>
 
-    <div class="word-bank">
-      <div class="word-bank-title">📦 Từ gợi ý (Word Bank):</div>
-      <div class="word-chips">
-        <span class="word-chip" onclick="insertWord(this, 'playing')">playing</span>
-        <span class="word-chip" onclick="insertWord(this, 'like')">like</span>
-        <span class="word-chip" onclick="insertWord(this, 'swimming')">swimming</span>
-        <span class="word-chip" onclick="insertWord(this, 'favourite')">favourite</span>
-        <span class="word-chip" onclick="insertWord(this, 'from')">from</span>
-        <span class="word-chip" onclick="insertWord(this, 'do')">do</span>
-        <span class="word-chip" onclick="insertWord(this, 'fly')">fly</span>
-        <span class="word-chip" onclick="insertWord(this, 'teaches')">teaches</span>
+    <!-- V.1 -->
+    <div class="qblock" id="q16">
+      <div class="q-text"><span class="q-label">1</span>
+        <span class="q-text-inner">like / you / milkshake / Do → _______________________?</span>
       </div>
-    </div>
-
-    <!-- Q17 -->
-    <div class="question-block" id="q17">
-      <div class="question-text">
-        <span class="question-num">17</span>
-        <span class="question-text-inner">
-          <div class="text-input-row">
-            <span class="text-input-label">I </span>
-            <input class="text-input" id="input17" type="text" placeholder="___" data-q="17" oninput="updateWritingProgress()" autocomplete="off">
-            <span class="text-input-label"> football every afternoon.</span>
-          </div>
-        </span>
+      <div class="reorder-area">
+        <div class="word-chips-row" id="chips16">
+          <span class="wchip" onclick="addWord(this,16,'like')">like</span>
+          <span class="wchip" onclick="addWord(this,16,'you')">you</span>
+          <span class="wchip" onclick="addWord(this,16,'milkshake')">milkshake</span>
+          <span class="wchip" onclick="addWord(this,16,'Do')">Do</span>
+        </div>
+        <div class="answer-box" id="box16"><span class="box-hint">Bấm các từ bên trên để sắp xếp...</span></div>
       </div>
-      <div class="question-feedback" id="feedback17"></div>
+      <div class="feedback" id="fb16"></div>
     </div>
 
-    <!-- Q18 -->
-    <div class="question-block" id="q18">
-      <div class="question-text">
-        <span class="question-num">18</span>
-        <span class="question-text-inner">
-          <div class="text-input-row">
-            <span class="text-input-label">My </span>
-            <input class="text-input" id="input18" type="text" placeholder="___" data-q="18" oninput="updateWritingProgress()" autocomplete="off">
-            <span class="text-input-label"> sport is badminton.</span>
-          </div>
-        </span>
+    <!-- V.2 -->
+    <div class="qblock" id="q17">
+      <div class="q-text"><span class="q-label">2</span>
+        <span class="q-text-inner">your / Are / yo-yos / these → _______________________?</span>
       </div>
-      <div class="question-feedback" id="feedback18"></div>
+      <div class="reorder-area">
+        <div class="word-chips-row" id="chips17">
+          <span class="wchip" onclick="addWord(this,17,'your')">your</span>
+          <span class="wchip" onclick="addWord(this,17,'Are')">Are</span>
+          <span class="wchip" onclick="addWord(this,17,'yo-yos')">yo-yos</span>
+          <span class="wchip" onclick="addWord(this,17,'these')">these</span>
+        </div>
+        <div class="answer-box" id="box17"><span class="box-hint">Bấm các từ bên trên để sắp xếp...</span></div>
+      </div>
+      <div class="feedback" id="fb17"></div>
     </div>
 
-    <!-- Q19 -->
-    <div class="question-block" id="q19">
-      <div class="question-text">
-        <span class="question-num">19</span>
-        <span class="question-text-inner">
-          <div class="text-input-row">
-            <span class="text-input-label">Where are you </span>
-            <input class="text-input" id="input19" type="text" placeholder="___" data-q="19" oninput="updateWritingProgress()" autocomplete="off">
-            <span class="text-input-label"> ? – I'm from Viet Nam.</span>
-          </div>
-        </span>
+    <!-- V.3 -->
+    <div class="qblock" id="q18">
+      <div class="q-text"><span class="q-label">3</span>
+        <span class="q-text-inner">scarf / my / white / is / That → _______________________.</span>
       </div>
-      <div class="question-feedback" id="feedback19"></div>
+      <div class="reorder-area">
+        <div class="word-chips-row" id="chips18">
+          <span class="wchip" onclick="addWord(this,18,'scarf')">scarf</span>
+          <span class="wchip" onclick="addWord(this,18,'my')">my</span>
+          <span class="wchip" onclick="addWord(this,18,'white')">white</span>
+          <span class="wchip" onclick="addWord(this,18,'is')">is</span>
+          <span class="wchip" onclick="addWord(this,18,'That')">That</span>
+        </div>
+        <div class="answer-box" id="box18"><span class="box-hint">Bấm các từ bên trên để sắp xếp...</span></div>
+      </div>
+      <div class="feedback" id="fb18"></div>
     </div>
 
-    <!-- Q20 -->
-    <div class="question-block" id="q20">
-      <div class="question-text">
-        <span class="question-num">20</span>
-        <span class="question-text-inner">
-          <div class="text-input-row">
-            <span class="text-input-label">She </span>
-            <input class="text-input" id="input20" type="text" placeholder="___" data-q="20" oninput="updateWritingProgress()" autocomplete="off">
-            <span class="text-input-label"> Maths at our school.</span>
-          </div>
-        </span>
+    <!-- V.4 -->
+    <div class="qblock" id="q19">
+      <div class="q-text"><span class="q-label">4</span>
+        <span class="q-text-inner">eyes / blue / Her / are → _______________________.</span>
       </div>
-      <div class="question-feedback" id="feedback20"></div>
+      <div class="reorder-area">
+        <div class="word-chips-row" id="chips19">
+          <span class="wchip" onclick="addWord(this,19,'eyes')">eyes</span>
+          <span class="wchip" onclick="addWord(this,19,'blue')">blue</span>
+          <span class="wchip" onclick="addWord(this,19,'Her')">Her</span>
+          <span class="wchip" onclick="addWord(this,19,'are')">are</span>
+        </div>
+        <div class="answer-box" id="box19"><span class="box-hint">Bấm các từ bên trên để sắp xếp...</span></div>
+      </div>
+      <div class="feedback" id="fb19"></div>
     </div>
   </div>
 
   <!-- SUBMIT -->
-  <div class="submit-section">
-    <button class="btn-submit" onclick="submitExam()">
-      🎯 Nộp Bài
-    </button>
-    <div class="submit-warning" id="submitWarning"></div>
+  <div class="submit-wrap">
+    <button class="btn-submit" onclick="submitExam()">🎯 Nộp Bài</button>
+    <div class="submit-warn" id="submitWarn"></div>
   </div>
 
-  <!-- ANSWER KEY SECTION -->
-  <div class="answer-key-section" id="answerKeySection">
-    <div class="answer-key-title">📋 Đáp Án & Nhận Xét</div>
+  <!-- ANSWER KEY -->
+  <div class="ak-section" id="akSection">
+    <div class="ak-heading">📋 Đáp Án Chi Tiết</div>
   </div>
 
-</div><!-- end container -->
+</div><!-- /container -->
 
-<!-- RESULT MODAL -->
-<div class="modal-overlay" id="resultModal">
-  <div class="result-modal">
-    <span class="result-emoji" id="resultEmoji">🎉</span>
-    <div class="result-title" id="resultTitle">Xuất sắc!</div>
-    <div class="result-score" id="resultScore">10/10</div>
-    <div class="result-stars" id="resultStars">⭐⭐⭐⭐⭐</div>
-    <div class="result-msg" id="resultMsg"></div>
-    <div class="result-breakdown" id="resultBreakdown"></div>
+<!-- MODAL -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <span class="m-emoji" id="mEmoji">🎉</span>
+    <div class="m-title" id="mTitle">Xuất sắc!</div>
+    <div class="m-score" id="mScore">10/10</div>
+    <div class="m-stars" id="mStars">⭐⭐⭐⭐⭐</div>
+    <div class="m-msg"   id="mMsg"></div>
+    <div class="m-breakdown" id="mBreak"></div>
     <button class="btn-review" onclick="closeModal()">📋 Xem Đáp Án</button>
-    <button class="btn-retry" onclick="retryExam()">🔄 Làm Lại</button>
+    <button class="btn-retry"  onclick="location.reload()">🔄 Làm Lại</button>
   </div>
 </div>
-
-<!-- CONFETTI -->
-<div class="confetti-container" id="confettiContainer"></div>
+<div class="cfall" id="cfall"></div>
 
 <script>
-  // ============================================================
-  // DATA
-  // ============================================================
-  const ANSWERS = {
-    1: 'A',   // Bread and milk
-    2: 'B',   // On the chair
-    3: 'A',   // By bus
-    4: 'A',   // Sunny and hot
-    5: 'B',   // Swimming
-    6: 'B',   // goes
-    7: 'B',   // What's
-    8: 'B',   // are
-    9: 'C',   // How
-    10: 'B',  // have
-    11: 'B',  // has
-    12: 'C',  // Do
-    13: 'C',  // Eight years old
-    14: 'B',  // He is a doctor
-    15: 'C',  // Maths
-    16: 'B',  // Four
-    17: 'like',       // I like football
-    18: 'favourite',  // My favourite sport
-    19: 'from',       // Where are you from
-    20: 'teaches',    // She teaches Maths
-  };
+// ═══════════════════════════════════════════════
+// ANSWER KEY DATA
+// ═══════════════════════════════════════════════
+const MCQ_ANSWERS = {
+  1:'D', 2:'A', 3:'C', 4:'B', 5:'A',   // Part I
+  6:'C', 7:'A', 8:'C', 9:'B', 10:'A',  // Part II
+};
+// Part I explanations
+const MCQ_EXPLAIN = {
+  1:'rice 🍚 – rice là thức ăn, còn lại là đồ uống.',
+  2:'toy 🧸 – toy là danh từ chung (đồ chơi), còn lại là loại đồ chơi cụ thể.',
+  3:'closet 🚪 – closet là đồ vật trong phòng, còn lại là quần áo.',
+  4:'mouth 👄 – mouth là bộ phận cơ thể, còn lại là tính từ miêu tả.',
+  5:'are – are là động từ, còn lại là đại từ sở hữu.',
+  6:'Do – "Do you want a kite?"',
+  7:'has – She (ngôi thứ 3 số ít) dùng has.',
+  8:'are – wearing – "What are you wearing?"',
+  9:'There is – "There is some soup." (soup không đếm được)',
+  10:'favorite – "What\'s your favorite food?"',
+};
 
-  const SECTION_RANGES = {
-    'Phần 1 – Listening': [1,2,3,4,5],
-    'Phần 2 – Language Focus': [6,7,8,9,10,11,12],
-    'Phần 3 – Reading': [13,14,15,16],
-    'Phần 4 – Writing': [17,18,19,20],
-  };
+const YN_ANSWERS = {
+  11:'No',   // blue dress → sai, Jane mặc blue SKIRT không phải dress
+  12:'Yes',  // white socks and black shoes → đúng
+  13:'Yes',  // brown hat → đúng
+  14:'Yes',  // green kite → đúng
+  15:'No',   // "some apples" không phải "an apple"
+};
+const YN_EXPLAIN = {
+  11:'Jane mặc blue skirt (chân váy xanh), không phải dress (váy liền).',
+  12:'Đúng! Jane mặc white socks và black shoes.',
+  13:'Đúng! "My hat is brown."',
+  14:'Đúng! "I also have a kite. It\'s green."',
+  15:'Đoạn văn nói "There are SOME apples" (nhiều táo), không phải "an apple" (một quả).',
+};
 
-  const TOTAL = 20;
-  let userAnswers = {};
-  let submitted = false;
-  let activeInputQ = null;
+// Reorder correct answers (normalized, lowercase, no punctuation for checking)
+const REORDER_ANSWERS = {
+  16: ['Do', 'you', 'like', 'milkshake'],
+  17: ['Are', 'these', 'your', 'yo-yos'],
+  18: ['That', 'is', 'my', 'white', 'scarf'],
+  19: ['Her', 'eyes', 'are', 'blue'],
+};
+const REORDER_DISPLAY = {
+  16: 'Do you like milkshake?',
+  17: 'Are these your yo-yos?',
+  18: 'That is my white scarf.',
+  19: 'Her eyes are blue.',
+};
 
-  // ============================================================
-  // PROGRESS DOTS INIT
-  // ============================================================
-  function initDots() {
-    const container = document.getElementById('progressDots');
-    container.innerHTML = '';
-    for (let i = 1; i <= TOTAL; i++) {
-      const dot = document.createElement('div');
-      dot.className = 'progress-dot';
-      dot.id = `dot${i}`;
-      dot.textContent = i;
-      dot.onclick = () => document.getElementById(`q${i}`).scrollIntoView({ behavior: 'smooth', block: 'center' });
-      container.appendChild(dot);
-    }
+const TOTAL = 19;
+const SECTIONS = {
+  'Phần I – Odd one out': [1,2,3,4,5],
+  'Phần II – Choose the best answer': [6,7,8,9,10],
+  'Phần III – Yes or No': [11,12,13,14,15],
+  'Phần V – Reorder': [16,17,18,19],
+};
+
+let ua = {};           // user answers: q# → value (string / array)
+let submitted = false;
+let reorderState = {}; // q# → [words chosen]
+
+// ═══════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════
+(function init(){
+  for(let i=16;i<=19;i++) reorderState[i]=[];
+  buildDots();
+})();
+
+function buildDots(){
+  const row = document.getElementById('dotRow');
+  for(let i=1;i<=TOTAL;i++){
+    const d=document.createElement('div');
+    d.className='pdot'; d.id='dot'+i; d.textContent=i;
+    d.onclick=()=>document.getElementById('q'+i).scrollIntoView({behavior:'smooth',block:'center'});
+    row.appendChild(d);
   }
+}
 
-  function updateProgress() {
-    const answered = Object.keys(userAnswers).length;
-    const pct = (answered / TOTAL) * 100;
-    document.getElementById('progressBar').style.width = pct + '%';
-    document.getElementById('progressText').textContent = `${answered} / ${TOTAL} câu`;
-
-    for (let i = 1; i <= TOTAL; i++) {
-      const dot = document.getElementById(`dot${i}`);
-      dot.className = 'progress-dot';
-      if (userAnswers[i] !== undefined) dot.classList.add('answered');
-    }
+function updateProgress(){
+  const done = Object.keys(ua).length;
+  document.getElementById('progBar').style.width=(done/TOTAL*100)+'%';
+  document.getElementById('progText').textContent=done+' / '+TOTAL+' câu';
+  for(let i=1;i<=TOTAL;i++){
+    const d=document.getElementById('dot'+i);
+    d.className='pdot'+(ua[i]!==undefined?' done':'');
   }
+}
 
-  // ============================================================
-  // OPTION SELECTION (MCQ)
-  // ============================================================
-  function selectOption(card) {
-    if (submitted) return;
-    const q = card.dataset.q;
-    const val = card.dataset.val;
-
-    // Deselect siblings
-    document.querySelectorAll(`.option-card[data-q="${q}"]`).forEach(c => c.classList.remove('selected'));
-    card.classList.add('selected');
-
-    userAnswers[q] = val;
-    document.getElementById(`q${q}`).classList.add('answered');
-    updateProgress();
-  }
-
-  // ============================================================
-  // WRITING INPUT
-  // ============================================================
-  let lastFocusedInput = null;
-
-  document.addEventListener('DOMContentLoaded', () => {
-    [17,18,19,20].forEach(n => {
-      const inp = document.getElementById(`input${n}`);
-      inp.addEventListener('focus', () => { lastFocusedInput = n; });
-    });
-  });
-
-  function insertWord(chip, word) {
-    if (submitted) return;
-    if (lastFocusedInput) {
-      const inp = document.getElementById(`input${lastFocusedInput}`);
-      inp.value = word;
-      updateWritingProgress();
-      inp.focus();
-    }
-  }
-
-  function updateWritingProgress() {
-    [17,18,19,20].forEach(n => {
-      const val = document.getElementById(`input${n}`).value.trim();
-      if (val) {
-        userAnswers[n] = val;
-        document.getElementById(`q${n}`).classList.add('answered');
-      } else {
-        delete userAnswers[n];
-        document.getElementById(`q${n}`).classList.remove('answered');
-      }
-    });
-    updateProgress();
-  }
-
-  // ============================================================
-  // SUBMIT
-  // ============================================================
-  function submitExam() {
-    if (submitted) return;
-
-    const unanswered = [];
-    for (let i = 1; i <= TOTAL; i++) {
-      if (userAnswers[i] === undefined) unanswered.push(i);
-    }
-
-    if (unanswered.length > 0 && unanswered.length > 8) {
-      const warning = document.getElementById('submitWarning');
-      warning.textContent = `⚠️ Bạn còn ${unanswered.length} câu chưa trả lời. Hãy cố gắng làm thêm nhé!`;
-      document.getElementById(`q${unanswered[0]}`).scrollIntoView({ behavior: 'smooth', block: 'center' });
-      return;
-    }
-
-    submitted = true;
-    document.getElementById('submitWarning').textContent = '';
-
-    // Calculate score
-    let correct = 0;
-    const sectionScores = {};
-
-    for (const [section, qs] of Object.entries(SECTION_RANGES)) {
-      let secCorrect = 0;
-      qs.forEach(q => {
-        const ua = String(userAnswers[q] || '').trim().toLowerCase();
-        const ca = String(ANSWERS[q]).trim().toLowerCase();
-        if (ua === ca) { correct++; secCorrect++; }
-      });
-      sectionScores[section] = `${secCorrect}/${qs.length}`;
-    }
-
-    const score10 = (correct / TOTAL * 10).toFixed(1);
-
-    // Show modal
-    showResult(correct, parseFloat(score10), sectionScores);
-
-    // Show answer key
-    setTimeout(() => showAnswerKey(), 600);
-  }
-
-  function showResult(correct, score10, sectionScores) {
-    let emoji, title, msg, stars;
-
-    if (score10 >= 9) {
-      emoji = '🏆'; title = 'Xuất sắc! Tuyệt vời!';
-      msg = 'Em làm bài rất giỏi! Em là ngôi sao của lớp! ✨';
-      stars = '⭐⭐⭐⭐⭐';
-    } else if (score10 >= 7) {
-      emoji = '😊'; title = 'Giỏi lắm!';
-      msg = 'Em làm bài tốt! Cố gắng thêm một chút nữa nhé! 💪';
-      stars = '⭐⭐⭐⭐';
-    } else if (score10 >= 5) {
-      emoji = '🙂'; title = 'Khá tốt!';
-      msg = 'Em cần ôn tập thêm một chút. Em làm được mà! 📚';
-      stars = '⭐⭐⭐';
-    } else {
-      emoji = '😅'; title = 'Cố gắng nhé!';
-      msg = 'Đừng nản lòng! Ôn tập thêm và thử lại nhé em! 🌈';
-      stars = '⭐⭐';
-    }
-
-    document.getElementById('resultEmoji').textContent = emoji;
-    document.getElementById('resultTitle').textContent = title;
-    document.getElementById('resultScore').textContent = `${correct}/20`;
-    document.getElementById('resultStars').textContent = stars;
-    document.getElementById('resultMsg').textContent = msg;
-
-    // Breakdown
-    let breakdownHTML = '';
-    for (const [section, score] of Object.entries(sectionScores)) {
-      breakdownHTML += `<div class="breakdown-row"><span>${section}</span><span class="breakdown-score">${score}</span></div>`;
-    }
-    breakdownHTML += `<div class="breakdown-row" style="font-size:15px;color:#333;"><span>🎯 Điểm tổng</span><span class="breakdown-score" style="font-size:18px;">${score10}/10</span></div>`;
-    document.getElementById('resultBreakdown').innerHTML = breakdownHTML;
-
-    document.getElementById('resultModal').classList.add('show');
-
-    if (score10 >= 7) launchConfetti();
-  }
-
-  function closeModal() {
-    document.getElementById('resultModal').classList.remove('show');
-    document.getElementById('answerKeySection').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
-  function retryExam() {
-    location.reload();
-  }
-
-  // ============================================================
-  // ANSWER KEY
-  // ============================================================
-  function showAnswerKey() {
-    const section = document.getElementById('answerKeySection');
-    section.classList.add('show');
-
-    // Disable all options and inputs
-    document.querySelectorAll('.option-card').forEach(c => {
-      c.classList.add('disabled');
-      const q = c.dataset.q;
-      const val = c.dataset.val;
-      const ua = String(userAnswers[q] || '').trim().toLowerCase();
-      const ca = String(ANSWERS[q]).trim().toLowerCase();
-
-      if (val.toLowerCase() === ca) {
-        c.classList.add('correct-ans');
-      } else if (val.toLowerCase() === ua && ua !== ca) {
-        c.classList.add('wrong-ans');
-      }
-
-      c.classList.remove('selected');
-    });
-
-    // MCQ feedback
-    for (let i = 1; i <= 16; i++) {
-      const ua = String(userAnswers[i] || '').trim().toLowerCase();
-      const ca = String(ANSWERS[i]).trim().toLowerCase();
-      const fb = document.getElementById(`feedback${i}`);
-      if (!fb) continue;
-
-      if (ua === ca) {
-        fb.className = 'question-feedback correct';
-        fb.textContent = '✅ Đúng rồi! Giỏi lắm!';
-      } else if (ua) {
-        fb.className = 'question-feedback incorrect';
-        fb.textContent = `❌ Chưa đúng. Đáp án đúng là: ${ANSWERS[i]}`;
-      } else {
-        fb.className = 'question-feedback incorrect';
-        fb.textContent = `❌ Chưa làm. Đáp án đúng là: ${ANSWERS[i]}`;
-      }
-    }
-
-    // Writing feedback
-    [17,18,19,20].forEach(n => {
-      const inp = document.getElementById(`input${n}`);
-      const ua = (inp.value || '').trim().toLowerCase();
-      const ca = ANSWERS[n].toLowerCase();
-      inp.classList.add('disabled');
-      inp.readOnly = true;
-
-      const fb = document.getElementById(`feedback${n}`);
-      if (ua === ca) {
-        inp.classList.add('correct-text');
-        fb.className = 'question-feedback correct';
-        fb.textContent = '✅ Đúng rồi! Giỏi lắm!';
-      } else {
-        inp.classList.add('wrong-text');
-        inp.value = inp.value || '(trống)';
-        fb.className = 'question-feedback incorrect';
-        fb.textContent = `❌ Chưa đúng. Đáp án đúng là: "${ANSWERS[n]}"`;
-      }
-    });
-  }
-
-  // ============================================================
-  // CONFETTI
-  // ============================================================
-  function launchConfetti() {
-    const container = document.getElementById('confettiContainer');
-    const colors = ['#667eea','#764ba2','#FF6B6B','#FFD93D','#6BCB77','#87CEEB','#FF8E53'];
-    for (let i = 0; i < 80; i++) {
-      setTimeout(() => {
-        const c = document.createElement('div');
-        c.className = 'confetto';
-        c.style.cssText = `
-          left: ${Math.random() * 100}%;
-          width: ${Math.random() * 10 + 6}px;
-          height: ${Math.random() * 10 + 6}px;
-          background: ${colors[Math.floor(Math.random() * colors.length)]};
-          border-radius: ${Math.random() > 0.5 ? '50%' : '2px'};
-          animation: fall ${Math.random() * 2 + 2}s linear forwards;
-          animation-delay: ${Math.random() * 0.5}s;
-        `;
-        container.appendChild(c);
-        setTimeout(() => c.remove(), 4000);
-      }, i * 30);
-    }
-  }
-
-  // ============================================================
-  // INIT
-  // ============================================================
-  initDots();
+// ═══════════════════════════════════════════════
+// MCQ SELECTION
+// ═══════════════════════════════════════════════
+function pick(card){
+  if(submitted) return;
+  const q=+card.dataset.q, v=card.dataset.v;
+  document.querySelectorAll(`.opt[data-q="${q}"]`).forEach(c=>c.classList.remove('sel'));
+  card.classList.add('sel');
+  ua[q]=v;
+  document.getElementById('q'+q).classList.add('answered');
   updateProgress();
+}
+
+// ═══════════════════════════════════════════════
+// YES / NO SELECTION
+// ═══════════════════════════════════════════════
+function pickYN(btn){
+  if(submitted) return;
+  const q=+btn.dataset.q, v=btn.dataset.v;
+  btn.closest('.yn-row').querySelectorAll('.yn-btn').forEach(b=>{
+    b.classList.remove('sel-yes','sel-no');
+  });
+  btn.classList.add(v==='Yes'?'sel-yes':'sel-no');
+  ua[q]=v;
+  document.getElementById('q'+q).classList.add('answered');
+  updateProgress();
+}
+
+// ═══════════════════════════════════════════════
+// REORDER WORDS
+// ═══════════════════════════════════════════════
+function addWord(chip, qn, word){
+  if(submitted) return;
+  chip.classList.add('used');
+  reorderState[qn].push(word);
+  renderBox(qn);
+  ua[qn] = [...reorderState[qn]];
+  document.getElementById('q'+qn).classList.add('answered');
+  updateProgress();
+}
+
+function removeWord(qn, idx){
+  if(submitted) return;
+  const word = reorderState[qn].splice(idx,1)[0];
+  // re-enable chip
+  document.querySelectorAll(`#chips${qn} .wchip`).forEach(c=>{
+    if(c.textContent===word && c.classList.contains('used')){
+      c.classList.remove('used'); return;
+    }
+  });
+  renderBox(qn);
+  if(reorderState[qn].length===0){
+    delete ua[qn];
+    document.getElementById('q'+qn).classList.remove('answered');
+  } else {
+    ua[qn]=[...reorderState[qn]];
+  }
+  updateProgress();
+}
+
+function renderBox(qn){
+  const box=document.getElementById('box'+qn);
+  if(reorderState[qn].length===0){
+    box.innerHTML='<span class="box-hint">Bấm các từ bên trên để sắp xếp...</span>';
+    box.classList.remove('has-content');
+    return;
+  }
+  box.classList.add('has-content');
+  box.innerHTML = reorderState[qn].map((w,i)=>
+    `<span class="placed-word" onclick="removeWord(${qn},${i})">${w}</span>`
+  ).join('');
+}
+
+function checkReorder(qn){
+  const correct = REORDER_ANSWERS[qn];
+  const user    = reorderState[qn];
+  if(user.length !== correct.length) return false;
+  return user.every((w,i)=> w.toLowerCase()===correct[i].toLowerCase());
+}
+
+// ═══════════════════════════════════════════════
+// SUBMIT
+// ═══════════════════════════════════════════════
+function submitExam(){
+  if(submitted) return;
+  const unanswered=[];
+  for(let i=1;i<=TOTAL;i++) if(ua[i]===undefined) unanswered.push(i);
+
+  if(unanswered.length > 10){
+    document.getElementById('submitWarn').textContent=
+      `⚠️ Bạn còn ${unanswered.length} câu chưa làm. Cố gắng làm thêm nhé!`;
+    document.getElementById('q'+unanswered[0]).scrollIntoView({behavior:'smooth',block:'center'});
+    return;
+  }
+  document.getElementById('submitWarn').textContent='';
+  submitted=true;
+
+  // score
+  let total=0;
+  const secScores={};
+  for(const [sec,qs] of Object.entries(SECTIONS)){
+    let s=0;
+    qs.forEach(q=>{
+      let ok=false;
+      if(q<=15){
+        const ans = q<=10 ? MCQ_ANSWERS[q] : YN_ANSWERS[q];
+        ok = (ua[q]||'') === ans;
+      } else {
+        ok = checkReorder(q);
+      }
+      if(ok) s++;
+    });
+    secScores[sec]=`${s}/${qs.length}`;
+    total+=s;
+  }
+
+  showModal(total, secScores);
+  setTimeout(showAnswerKey, 500);
+}
+
+// ═══════════════════════════════════════════════
+// MODAL
+// ═══════════════════════════════════════════════
+function showModal(correct, secScores){
+  const pct = correct/TOTAL;
+  let emoji,title,msg,stars;
+  if(pct>=.9){  emoji='🏆';title='Xuất sắc! Tuyệt vời!';  msg='Em thật giỏi! Em là ngôi sao của lớp! ✨'; stars='⭐⭐⭐⭐⭐';}
+  else if(pct>=.7){emoji='😊';title='Giỏi lắm!';  msg='Em làm bài tốt! Cố gắng thêm nhé! 💪'; stars='⭐⭐⭐⭐';}
+  else if(pct>=.5){emoji='🙂';title='Khá tốt!';   msg='Ôn tập thêm rồi thử lại nhé em! 📚'; stars='⭐⭐⭐';}
+  else{            emoji='😅';title='Cố gắng nhé!';msg='Đừng nản lòng! Ôn luyện thêm nào! 🌈'; stars='⭐⭐';}
+
+  document.getElementById('mEmoji').textContent=emoji;
+  document.getElementById('mTitle').textContent=title;
+  document.getElementById('mScore').textContent=`${correct}/${TOTAL}`;
+  document.getElementById('mStars').textContent=stars;
+  document.getElementById('mMsg').textContent=msg;
+
+  let html='';
+  for(const [s,v] of Object.entries(secScores))
+    html+=`<div class="m-row"><span>${s}</span><span class="m-sc">${v}</span></div>`;
+  html+=`<div class="m-row"><span>🎯 Tổng điểm (10)</span><span class="m-sc" style="font-size:17px">${(correct/TOTAL*10).toFixed(1)}/10</span></div>`;
+  document.getElementById('mBreak').innerHTML=html;
+  document.getElementById('overlay').classList.add('show');
+
+  if(pct>=0.7) launchConfetti();
+}
+
+function closeModal(){
+  document.getElementById('overlay').classList.remove('show');
+  document.getElementById('akSection').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// ═══════════════════════════════════════════════
+// ANSWER KEY DISPLAY
+// ═══════════════════════════════════════════════
+function showAnswerKey(){
+  document.getElementById('akSection').classList.add('show');
+
+  // MCQ (Parts I & II)
+  for(let q=1;q<=10;q++){
+    const correct=MCQ_ANSWERS[q];
+    const userAns=ua[q]||'';
+    document.querySelectorAll(`.opt[data-q="${q}"]`).forEach(c=>{
+      c.classList.add('disabled');
+      c.classList.remove('sel');
+      if(c.dataset.v===correct)           c.classList.add('correct');
+      else if(c.dataset.v===userAns && userAns!==correct) c.classList.add('wrong');
+    });
+    const fb=document.getElementById('fb'+q);
+    if(userAns===correct){
+      fb.className='feedback ok'; fb.textContent='✅ Đúng! '+MCQ_EXPLAIN[q];
+    } else if(userAns){
+      fb.className='feedback err'; fb.textContent='❌ Chưa đúng. '+MCQ_EXPLAIN[q];
+    } else {
+      fb.className='feedback err'; fb.textContent='❌ Chưa làm. Đáp án: '+correct+'. '+MCQ_EXPLAIN[q];
+    }
+  }
+
+  // Yes/No (Part III)
+  for(let q=11;q<=15;q++){
+    const correct=YN_ANSWERS[q];
+    const userAns=ua[q]||'';
+    document.getElementById('q'+q).querySelectorAll('.yn-btn').forEach(b=>{
+      b.classList.add('disabled');
+      b.classList.remove('sel-yes','sel-no');
+      const bv=b.dataset.v;
+      if(bv===correct) b.classList.add('correct-'+correct.toLowerCase());
+      else if(bv===userAns && userAns!==correct) b.classList.add('wrong-choice');
+    });
+    const fb=document.getElementById('fb'+q);
+    if(userAns===correct){
+      fb.className='feedback ok'; fb.textContent='✅ Đúng! '+YN_EXPLAIN[q];
+    } else if(userAns){
+      fb.className='feedback err'; fb.textContent='❌ Chưa đúng. Đáp án: '+correct+'. '+YN_EXPLAIN[q];
+    } else {
+      fb.className='feedback err'; fb.textContent='❌ Chưa làm. Đáp án: '+correct+'. '+YN_EXPLAIN[q];
+    }
+  }
+
+  // Reorder (Part V)
+  for(let q=16;q<=19;q++){
+    const isOk=checkReorder(q);
+    const box=document.getElementById('box'+q);
+    const fb=document.getElementById('fb'+q);
+
+    // disable chips
+    document.querySelectorAll(`#chips${q} .wchip`).forEach(c=>c.style.pointerEvents='none');
+    // disable placed words
+    box.querySelectorAll('.placed-word').forEach(pw=>pw.style.pointerEvents='none');
+
+    if(isOk){
+      box.classList.add('correct-box');
+      fb.className='feedback ok'; fb.textContent='✅ Đúng! '+REORDER_DISPLAY[q];
+    } else {
+      box.classList.add('wrong-box');
+      const corrSpan=document.createElement('div');
+      corrSpan.className='correct-ans-text';
+      corrSpan.textContent='✅ Đáp án đúng: '+REORDER_DISPLAY[q];
+      box.after(corrSpan);
+      fb.className='feedback err'; fb.textContent='❌ Chưa đúng. Đáp án đúng ở bên dưới.';
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════
+// CONFETTI
+// ═══════════════════════════════════════════════
+function launchConfetti(){
+  const el=document.getElementById('cfall');
+  const colors=['#7C3AED','#2563EB','#059669','#EA580C','#D97706','#EC4899','#06B6D4'];
+  for(let i=0;i<80;i++){
+    setTimeout(()=>{
+      const c=document.createElement('div');
+      c.className='confetto';
+      c.style.cssText=`left:${Math.random()*100}%;width:${Math.random()*10+6}px;height:${Math.random()*10+6}px;background:${colors[Math.floor(Math.random()*colors.length)]};border-radius:${Math.random()>.5?'50%':'3px'};animation:fall ${Math.random()*2+2}s linear forwards;animation-delay:${Math.random()*0.4}s;`;
+      el.appendChild(c);
+      setTimeout(()=>c.remove(),4000);
+    },i*28);
+  }
+}
 </script>
 </body>
 </html>
