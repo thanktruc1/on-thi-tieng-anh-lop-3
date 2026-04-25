@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌟 Đề Kiểm Tra Tiếng Anh Lớp 3 - Đề 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #EC4899;
+    --pink-light: #FCE7F3;
+    --teal: #0D9488;
+    --teal-light: #CCFBF1;
+    --orange: #EA580C;
+    --orange-light: #FFEDD5;
+    --violet: #7C3AED;
+    --violet-light: #EDE9FE;
+    --blue: #2563EB;
+    --blue-light: #DBEAFE;
+    --green: #059669;
+    --green-light: #D1FAE5;
+    --red: #DC2626;
+    --red-light: #FEE2E2;
+    --yellow: #D97706;
+    --yellow-light: #FEF3C7;
+    --text-dark: #1E1B4B;
+    --text-mid: #4B5563;
+    --gray-light: #F3F4F6;
+    --shadow: 0 4px 24px rgba(236,72,153,0.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Nunito',sans-serif;
+    background:linear-gradient(160deg,#fce7f3 0%,#fff7ed 45%,#ccfbf1 100%);
+    min-height:100vh; padding:20px 14px 48px;
+  }
+  .top-banner{text-align:center;font-size:28px;letter-spacing:12px;margin-bottom:16px;animation:floatIcons 3s ease-in-out infinite;}
+  @keyframes floatIcons{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+  .container{max-width:800px;margin:0 auto;}
+
+  /* HEADER */
+  .exam-header{
+    background:linear-gradient(135deg,#EC4899 0%,#8B5CF6 55%,#0D9488 100%);
+    border-radius:28px;padding:30px 28px 26px;text-align:center;color:#fff;
+    margin-bottom:22px;box-shadow:0 10px 40px rgba(236,72,153,0.35);
+    position:relative;overflow:hidden;
+  }
+  .exam-header::after{content:'';position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.07);top:-80px;right:-60px;pointer-events:none;}
+  .header-emoji{font-size:52px;display:block;margin-bottom:10px;animation:bounce 2s ease-in-out infinite;}
+  @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+  .exam-title{font-family:'Baloo 2',cursive;font-size:26px;font-weight:800;margin-bottom:5px;text-shadow:0 2px 8px rgba(0,0,0,.2);}
+  .exam-sub{font-size:14px;font-weight:600;opacity:.85;margin-bottom:16px;}
+  .meta-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+  .meta-badge{background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.35);border-radius:50px;padding:6px 18px;font-size:13px;font-weight:800;backdrop-filter:blur(4px);}
+
+  /* PROGRESS */
+  .progress-card{background:#fff;border-radius:18px;padding:16px 22px;margin-bottom:20px;box-shadow:var(--shadow);}
+  .prog-label{display:flex;justify-content:space-between;margin-bottom:9px;font-size:14px;font-weight:800;color:var(--text-mid);}
+  .prog-track{background:#FCE7F3;border-radius:50px;height:13px;overflow:hidden;}
+  .prog-fill{height:100%;border-radius:50px;background:linear-gradient(90deg,#EC4899,#0D9488);width:0%;transition:width .5s ease;position:relative;overflow:hidden;}
+  .prog-fill::after{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);animation:shine 2s ease-in-out infinite;}
+  @keyframes shine{to{left:100%}}
+  .dot-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
+  .pdot{width:30px;height:30px;border-radius:50%;background:#FCE7F3;border:2px solid transparent;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#EC4899;cursor:pointer;transition:all .2s;}
+  .pdot.done{background:linear-gradient(135deg,#EC4899,#0D9488);color:#fff;}
+
+  /* SECTION CARD */
+  .section-card{background:#fff;border-radius:22px;padding:24px 22px;margin-bottom:22px;box-shadow:var(--shadow);border-left:6px solid #EC4899;}
+  .section-card.sec-I  {border-left-color:#EC4899;}
+  .section-card.sec-II {border-left-color:#EA580C;}
+  .section-card.sec-III{border-left-color:#0D9488;}
+  .section-card.sec-V  {border-left-color:#7C3AED;}
+  .sec-head{display:flex;align-items:center;gap:12px;margin-bottom:6px;}
+  .sec-icon{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;}
+  .sec-I  .sec-icon{background:#FCE7F3;}
+  .sec-II .sec-icon{background:#FFEDD5;}
+  .sec-III .sec-icon{background:#CCFBF1;}
+  .sec-V  .sec-icon{background:#EDE9FE;}
+  .sec-title{font-family:'Baloo 2',cursive;font-size:19px;font-weight:800;color:var(--text-dark);}
+  .sec-desc{font-size:13px;color:var(--text-mid);font-weight:700;background:var(--gray-light);border-radius:10px;padding:8px 14px;margin-top:10px;}
+
+  /* ══ PART I: MATCHING (row style) ══ */
+  .match-rows { display:flex; flex-direction:column; gap:10px; margin-top:16px; }
+
+  .match-row {
+    display:grid;
+    grid-template-columns: 90px 1fr 52px;
+    align-items:center;
+    background:#FAFBFF;
+    border:2.5px solid #E5E7EB;
+    border-radius:18px;
+    overflow:hidden;
+    transition:border-color .25s, box-shadow .25s;
+    min-height:80px;
+  }
+  .match-row:hover { border-color:#C4B5FD; }
+  .match-row.row-done { border-color:#A78BFA; background:#FAF5FF; }
+  .match-row.review-ok  { border-color:#059669!important; background:#F0FDF9!important; }
+  .match-row.review-err { border-color:#DC2626!important; background:#FFF5F5!important; }
+
+  /* Left: image tile */
+  .mc-img {
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding:10px 6px; gap:2px;
+    border-right:2px solid #E5E7EB;
+    background:#F5F3FF;
+    height:100%;
+    position:relative;
+  }
+  .mc-num {
+    position:absolute; top:5px; left:6px;
+    width:20px; height:20px; border-radius:50%;
+    background:linear-gradient(135deg,#EC4899,#8B5CF6);
+    color:#fff; font-size:10px; font-weight:900;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .mc-emoji { font-size:40px; line-height:1; }
+
+  /* Middle: arrow + dropdown */
+  .mc-mid {
+    display:flex; align-items:center; gap:10px;
+    padding:12px 14px;
+  }
+  .mc-arrow {
+    font-size:18px; color:#C4B5FD; flex-shrink:0;
+    transition:color .25s;
+  }
+  .match-row.row-done .mc-arrow { color:#7C3AED; }
+
+  .mc-select {
+    flex:1;
+    border:2.5px solid #DDE0F0;
+    border-radius:12px;
+    padding:10px 14px;
+    font-family:'Nunito',sans-serif;
+    font-size:16px; font-weight:800;
+    color:#9CA3AF;
+    background:#fff;
+    cursor:pointer;
+    outline:none;
+    appearance:none;
+    -webkit-appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23A78BFA' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;
+    background-position:right 12px center;
+    padding-right:36px;
+    transition:border-color .2s, color .2s;
+  }
+  .mc-select:focus { border-color:#7C3AED; box-shadow:0 0 0 3px rgba(124,58,237,.18); }
+  .mc-select.chosen { color:#5B21B6; border-color:#A78BFA; background-color:#F5F3FF; }
+  .mc-select:disabled { pointer-events:none; opacity:.8; }
+  .mc-select.sel-ok  { border-color:#059669!important; color:#065F46!important; background-color:#F0FDF9!important; }
+  .mc-select.sel-err { border-color:#DC2626!important; color:#991B1B!important; background-color:#FFF5F5!important; }
+
+  /* Right: clear button */
+  .mc-clear {
+    display:flex; align-items:center; justify-content:center;
+    height:100%;
+    border-left:2px solid #E5E7EB;
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+    color:#D1D5DB;
+    transition:all .2s;
+    padding:0 16px;
+    border-left:2px solid #E5E7EB;
+  }
+  .mc-clear:hover { color:#EC4899; background:#FDF2F8; }
+  .mc-clear.hidden { opacity:0; pointer-events:none; }
+  .mc-clear:disabled { pointer-events:none; }
+
+  .match-hint { font-size:13px; color:#9CA3AF; text-align:center; margin-top:10px; font-weight:600; font-style:italic; }
+
+  /* review result list */
+  .match-result-row { display:none; flex-direction:column; gap:8px; margin-top:14px; }
+  .match-result-row.show { display:flex; }
+  .match-result-item { display:flex; align-items:center; gap:10px; background:#F8F9FF; border-radius:12px; padding:10px 14px; font-size:14px; font-weight:700; }
+  .match-result-item.ok  { background:#D1FAE5; color:#065F46; }
+  .match-result-item.err { background:#FEE2E2; color:#991B1B; }
+
+  /* ══ PART II: ERROR CORRECTION ══ */
+  .qblock{background:#FAFBFF;border:2px solid #E5E7EB;border-radius:16px;padding:18px 18px 14px;margin-top:14px;transition:all .25s;}
+  .qblock:hover{border-color:#FCA5A5;box-shadow:0 4px 16px rgba(234,88,12,.09);}
+  .qblock.answered{border-color:#A7F3D0;background:#F0FDF9;}
+  .q-label{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#EC4899,#8B5CF6);color:#fff;font-size:13px;font-weight:900;margin-right:9px;flex-shrink:0;}
+  .q-text{display:flex;align-items:flex-start;font-size:16px;font-weight:700;color:#1E1B4B;margin-bottom:14px;line-height:1.5;}
+  .q-text-inner{flex:1;}
+  .sentence-box{
+    background:#FFF7ED;border:2px dashed #FCD34D;border-radius:12px;
+    padding:12px 16px;font-size:16px;font-weight:700;
+    color:#1E1B4B;margin-bottom:14px;line-height:1.6;
+  }
+  .err-label{font-size:13px;font-weight:800;color:#EA580C;margin-bottom:8px;}
+  .err-input-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}
+  .err-field{
+    border:2.5px solid #DDE0F0;border-radius:10px;
+    padding:8px 14px;font-family:'Nunito',sans-serif;
+    font-size:15px;font-weight:700;color:var(--text-dark);
+    outline:none;transition:border-color .2s;background:#fff;
+    min-width:140px;
+  }
+  .err-field:focus{border-color:#EC4899;box-shadow:0 0 0 3px rgba(236,72,153,.18);}
+  .err-field.correct-f{border-color:#059669;background:#F0FDF4;color:#065F46;}
+  .err-field.wrong-f  {border-color:#DC2626;background:#FFF5F5;color:#991B1B;}
+  .err-field-label{font-size:14px;font-weight:800;color:var(--text-mid);}
+
+  /* ══ PART III: DIALOGUE COMPLETION ══ */
+  .word-bank{background:#FEF3C7;border:2px dashed #FCD34D;border-radius:14px;padding:12px 16px;margin-bottom:16px;}
+  .wb-title{font-weight:900;color:#92400E;margin-bottom:8px;font-size:14px;}
+  .wb-chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .wb-chip{
+    background:#fff;border:2px solid #FCD34D;border-radius:50px;
+    padding:5px 16px;font-size:14px;font-weight:800;color:#92400E;
+    cursor:pointer;transition:all .2s;user-select:none;
+  }
+  .wb-chip:hover{background:#FCD34D;}
+  .wb-chip.used{opacity:.35;pointer-events:none;text-decoration:line-through;}
+
+  .dialogue-box{
+    background:linear-gradient(135deg,#F0FDFA,#DBEAFE);
+    border:2px solid #93C5FD;border-radius:16px;
+    padding:18px 20px;font-size:15px;line-height:2.2;color:#1E3A5F;font-weight:600;
+  }
+  .d-line{margin-bottom:4px;display:flex;align-items:center;flex-wrap:wrap;gap:6px;}
+  .d-speaker{font-weight:900;color:#1D4ED8;flex-shrink:0;}
+  .d-blank{
+    display:inline-block;border-bottom:2.5px solid #3B82F6;
+    min-width:100px;text-align:center;padding:2px 8px;
+    font-weight:800;color:#1D4ED8;cursor:pointer;
+    border-radius:6px;transition:background .2s;
+    background:rgba(219,234,254,.5);
+  }
+  .d-blank.filled{background:#DBEAFE;border-bottom-color:#2563EB;}
+  .d-blank.correct-b{background:#D1FAE5!important;border-bottom-color:#059669!important;color:#065F46!important;}
+  .d-blank.wrong-b  {background:#FEE2E2!important;border-bottom-color:#DC2626!important;color:#991B1B!important;}
+  .d-text{flex-shrink:0;}
+
+  /* Active blank highlight */
+  .d-blank.active{box-shadow:0 0 0 3px rgba(236,72,153,.35);border-bottom-color:#EC4899;background:rgba(252,231,243,.7);}
+
+  .feedback{display:none;margin-top:10px;padding:9px 14px;border-radius:10px;font-size:14px;font-weight:700;align-items:center;gap:8px;}
+  .feedback.ok {background:#D1FAE5;color:#065F46;display:flex;}
+  .feedback.err{background:#FEE2E2;color:#991B1B;display:flex;}
+
+  /* ══ PART V: REORDER ══ */
+  .word-chips-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;}
+  .wchip{background:#EDE9FE;border:2px solid #C4B5FD;border-radius:50px;padding:6px 16px;font-size:14px;font-weight:800;color:#5B21B6;cursor:pointer;transition:all .2s;user-select:none;}
+  .wchip:hover{background:#DDD6FE;}
+  .wchip.used{opacity:.35;pointer-events:none;text-decoration:line-through;}
+  .answer-box{min-height:46px;border:2.5px dashed #C4B5FD;border-radius:12px;padding:8px 14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;background:#FAFBFF;font-size:15px;font-weight:700;color:var(--text-dark);}
+  .answer-box.has-content{border-style:solid;border-color:#7C3AED;}
+  .placed-word{background:#7C3AED;border-radius:50px;padding:4px 14px;font-size:14px;font-weight:800;color:#fff;cursor:pointer;transition:all .2s;}
+  .placed-word:hover{background:#6D28D9;}
+  .box-hint{font-size:13px;color:#9CA3AF;font-style:italic;}
+  .answer-box.correct-box{background:#D1FAE5!important;border-color:#059669!important;border-style:solid!important;}
+  .answer-box.wrong-box  {background:#FEE2E2!important;border-color:#DC2626!important;border-style:solid!important;}
+  .correct-ans-text{font-size:13px;font-weight:700;color:#065F46;margin-top:6px;}
+
+  /* SUBMIT */
+  .submit-wrap{text-align:center;margin:28px 0 8px;}
+  .btn-submit{
+    background:linear-gradient(135deg,#EC4899,#8B5CF6);
+    color:#fff;border:none;border-radius:50px;padding:18px 52px;
+    font-family:'Baloo 2',cursive;font-size:20px;font-weight:800;
+    cursor:pointer;box-shadow:0 8px 26px rgba(236,72,153,.38);
+    transition:all .3s;display:inline-flex;align-items:center;gap:10px;
+  }
+  .btn-submit:hover{transform:translateY(-4px);box-shadow:0 12px 34px rgba(236,72,153,.45);}
+  .submit-warn{margin-top:10px;font-size:13px;color:#9CA3AF;font-weight:700;}
+
+  /* MODAL */
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.52);backdrop-filter:blur(7px);z-index:1000;display:none;align-items:center;justify-content:center;padding:20px;}
+  .overlay.show{display:flex;}
+  .modal{background:#fff;border-radius:28px;padding:38px 32px;max-width:460px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.25);animation:popIn .4s cubic-bezier(.34,1.56,.64,1);}
+  @keyframes popIn{from{transform:scale(.5);opacity:0}to{transform:scale(1);opacity:1}}
+  .m-emoji {font-size:70px;display:block;margin-bottom:10px;animation:bounce 1.2s ease-in-out infinite;}
+  .m-title {font-family:'Baloo 2',cursive;font-size:26px;font-weight:800;color:var(--text-dark);margin-bottom:6px;}
+  .m-score {font-size:54px;font-weight:900;font-family:'Baloo 2',cursive;background:linear-gradient(135deg,#EC4899,#0D9488);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin:12px 0;}
+  .m-stars {font-size:30px;letter-spacing:8px;margin-bottom:10px;}
+  .m-msg   {font-size:16px;font-weight:700;color:#6B7280;margin-bottom:20px;line-height:1.5;}
+  .m-breakdown{background:var(--gray-light);border-radius:14px;padding:14px;margin-bottom:22px;text-align:left;}
+  .m-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #E5E7EB;font-size:14px;font-weight:700;color:#555;}
+  .m-row:last-child{border-bottom:none;}
+  .m-sc{color:var(--text-dark);font-size:15px;}
+  .btn-review{background:linear-gradient(135deg,#EC4899,#8B5CF6);color:#fff;border:none;border-radius:50px;padding:13px 32px;font-family:'Baloo 2',cursive;font-size:17px;font-weight:800;cursor:pointer;box-shadow:0 6px 20px rgba(236,72,153,.35);transition:all .3s;margin-right:8px;}
+  .btn-retry {background:linear-gradient(135deg,#059669,#047857);color:#fff;border:none;border-radius:50px;padding:13px 32px;font-family:'Baloo 2',cursive;font-size:17px;font-weight:800;cursor:pointer;box-shadow:0 6px 20px rgba(5,150,105,.35);transition:all .3s;margin-top:10px;}
+  .btn-review:hover,.btn-retry:hover{transform:translateY(-3px);}
+
+  .ak-section{display:none;}
+  .ak-section.show{display:block;}
+  .ak-heading{text-align:center;font-family:'Baloo 2',cursive;font-size:22px;font-weight:800;color:var(--text-dark);padding:16px;background:#fff;border-radius:16px;box-shadow:var(--shadow);margin-bottom:16px;}
+
+  /* confetti */
+  .cfall{position:fixed;inset:0;pointer-events:none;z-index:999;}
+  .confetto{position:absolute;width:10px;height:10px;top:-10px;border-radius:2px;animation:fall linear forwards;}
+  @keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0;}}
+
+  @media(max-width:580px){
+    .match-grid{grid-template-columns:1fr;}
+    .exam-title{font-size:20px;}
+    .m-score{font-size:42px;}
+  }
+
+  /* Opt buttons (for MCQ if needed) */
+  .opts{display:grid;gap:9px;}
+  .opts.c1{grid-template-columns:1fr;}
+  .opt{background:#fff;border:2.5px solid #DDE0F0;border-radius:13px;padding:13px 16px;cursor:pointer;transition:all .22s;display:flex;align-items:center;gap:11px;font-size:15px;font-weight:700;color:#374151;user-select:none;}
+  .opt:hover{border-color:#EC4899;transform:translateY(-2px);box-shadow:0 4px 14px rgba(236,72,153,.15);}
+  .opt.sel{background:linear-gradient(135deg,#EC4899,#8B5CF6);border-color:transparent;color:#fff;transform:translateY(-2px);box-shadow:0 6px 20px rgba(236,72,153,.38);}
+  .opt.correct{background:linear-gradient(135deg,#059669,#047857)!important;border-color:transparent!important;color:#fff!important;pointer-events:none;}
+  .opt.wrong  {background:linear-gradient(135deg,#DC2626,#B91C1C)!important;border-color:transparent!important;color:#fff!important;text-decoration:line-through;opacity:.85;pointer-events:none;}
+  .opt.disabled{pointer-events:none;}
+  .opt-letter{width:30px;height:30px;border-radius:50%;background:#FCE7F3;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;color:#EC4899;flex-shrink:0;transition:all .22s;}
+  .opt.sel .opt-letter{background:rgba(255,255,255,.25);color:#fff;}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="top-banner">🌸 ✏️ 🌈 ⭐ 🎀</div>
+
+  <!-- HEADER -->
+  <div class="exam-header">
+    <span class="header-emoji">🌺</span>
+    <div class="exam-title">ĐỀ KIỂM TRA TIẾNG ANH LỚP 3</div>
+    <div class="exam-sub">Học Kỳ 2 · Bộ Sách Cánh Diều · <strong>Đề Số 2</strong></div>
+    <div class="meta-row">
+      <div class="meta-badge">📝 18 câu hỏi</div>
+      <div class="meta-badge">🏆 10 điểm</div>
+      <div class="meta-badge">⏱ 40 phút</div>
+    </div>
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="progress-card">
+    <div class="prog-label">
+      <span>⚡ Tiến độ làm bài</span>
+      <span id="progText">0 / 18 câu</span>
+    </div>
+    <div class="prog-track"><div class="prog-fill" id="progBar"></div></div>
+    <div class="dot-row" id="dotRow"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       PART I – MATCH
+  ══════════════════════════════════════ -->
+  <div class="section-card sec-I">
+    <div class="sec-head">
+      <div class="sec-icon">🔗</div>
+      <div class="sec-title">I. Match</div>
+    </div>
+    <p class="sec-desc">📌 Bấm vào ô chọn (▼) bên phải mỗi hình và chọn từ phù hợp. Bấm ✕ để bỏ chọn nếu muốn đổi lại.</p>
+
+    <div class="match-rows">
+
+      <!-- Row 1: Gloves SVG -->
+      <div class="match-row" id="mrow1">
+        <div class="mc-img">
+          <div class="mc-num">1</div>
+          <svg width="72" height="62" viewBox="0 0 72 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Left glove -->
+            <g transform="translate(2,4)">
+              <!-- thumb -->
+              <ellipse cx="8" cy="22" rx="5" ry="7" fill="#F97316" stroke="#C2410C" stroke-width="1.5"/>
+              <!-- palm -->
+              <rect x="10" y="16" width="18" height="26" rx="5" fill="#FB923C" stroke="#C2410C" stroke-width="1.5"/>
+              <!-- fingers -->
+              <rect x="11" y="6"  width="5" height="14" rx="3" fill="#FB923C" stroke="#C2410C" stroke-width="1.5"/>
+              <rect x="17" y="4"  width="5" height="14" rx="3" fill="#FB923C" stroke="#C2410C" stroke-width="1.5"/>
+              <rect x="23" y="6"  width="5" height="13" rx="3" fill="#FB923C" stroke="#C2410C" stroke-width="1.5"/>
+              <!-- cuff -->
+              <rect x="10" y="38" width="18" height="7" rx="3" fill="#FED7AA" stroke="#C2410C" stroke-width="1.5"/>
+              <!-- knit lines on cuff -->
+              <line x1="13" y1="39" x2="13" y2="44" stroke="#C2410C" stroke-width="1" opacity="0.5"/>
+              <line x1="17" y1="39" x2="17" y2="44" stroke="#C2410C" stroke-width="1" opacity="0.5"/>
+              <line x1="21" y1="39" x2="21" y2="44" stroke="#C2410C" stroke-width="1" opacity="0.5"/>
+              <line x1="25" y1="39" x2="25" y2="44" stroke="#C2410C" stroke-width="1" opacity="0.5"/>
+            </g>
+            <!-- Right glove (mirrored, offset) -->
+            <g transform="translate(36,4) scale(-1,1) translate(-34,0)">
+              <ellipse cx="8" cy="22" rx="5" ry="7" fill="#F97316" stroke="#C2410C" stroke-width="1.5"/>
+              <rect x="10" y="16" width="18" height="26" rx="5" fill="#FB923C" stroke="#C2410C" stroke-width="1.5"/>
+              <rect x="11" y="6"  width="5" height="14" rx="3" fill="#FB923C" stroke="#C2410C" stroke-width="1.5"/>
+              <rect x="17" y="4"  width="5" height="14" rx="3" fill="#FB923C" stroke="#C2410C" stroke-width="1.5"/>
+              <rect x="23" y="6"  width="5" height="13" rx="3" fill="#FB923C" stroke="#C2410C" stroke-width="1.5"/>
+              <rect x="10" y="38" width="18" height="7" rx="3" fill="#FED7AA" stroke="#C2410C" stroke-width="1.5"/>
+              <line x1="13" y1="39" x2="13" y2="44" stroke="#C2410C" stroke-width="1" opacity="0.5"/>
+              <line x1="17" y1="39" x2="17" y2="44" stroke="#C2410C" stroke-width="1" opacity="0.5"/>
+              <line x1="21" y1="39" x2="21" y2="44" stroke="#C2410C" stroke-width="1" opacity="0.5"/>
+              <line x1="25" y1="39" x2="25" y2="44" stroke="#C2410C" stroke-width="1" opacity="0.5"/>
+            </g>
+          </svg>
+        </div>
+        <div class="mc-mid">
+          <span class="mc-arrow">→</span>
+          <select class="mc-select" id="msel1" onchange="onMatchSelect(1)">
+            <option value="">-- Chọn từ --</option>
+            <option value="Truck">Truck</option>
+            <option value="Tea">Tea</option>
+            <option value="Gloves">Gloves</option>
+            <option value="Sandwich">Sandwich</option>
+            <option value="Curly">Curly</option>
+          </select>
+        </div>
+        <button class="mc-clear hidden" id="mclr1" onclick="clearMatch(1)" title="Bỏ chọn">✕</button>
+      </div>
+
+      <!-- Row 2: Sandwich SVG -->
+      <div class="match-row" id="mrow2">
+        <div class="mc-img">
+          <div class="mc-num">2</div>
+          <svg width="72" height="62" viewBox="0 0 72 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- top bread -->
+            <ellipse cx="36" cy="14" rx="28" ry="10" fill="#F59E0B" stroke="#B45309" stroke-width="1.5"/>
+            <ellipse cx="36" cy="12" rx="28" ry="8" fill="#FBBF24" stroke="#B45309" stroke-width="1.2"/>
+            <!-- sesame seeds -->
+            <ellipse cx="26" cy="10" rx="2.5" ry="1.5" fill="#FEF3C7" transform="rotate(-20 26 10)"/>
+            <ellipse cx="36" cy="8"  rx="2.5" ry="1.5" fill="#FEF3C7" transform="rotate(10 36 8)"/>
+            <ellipse cx="46" cy="10" rx="2.5" ry="1.5" fill="#FEF3C7" transform="rotate(-10 46 10)"/>
+            <ellipse cx="31" cy="14" rx="2"   ry="1.2" fill="#FEF3C7" transform="rotate(15 31 14)"/>
+            <ellipse cx="42" cy="14" rx="2"   ry="1.2" fill="#FEF3C7" transform="rotate(-15 42 14)"/>
+            <!-- lettuce -->
+            <path d="M10 26 Q18 20 26 24 Q34 18 42 24 Q50 20 62 26" stroke="#4ADE80" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <!-- tomato slice -->
+            <ellipse cx="36" cy="32" rx="26" ry="6" fill="#F87171" stroke="#DC2626" stroke-width="1.2"/>
+            <line x1="36" y1="26" x2="36" y2="38" stroke="#FCA5A5" stroke-width="1"/>
+            <line x1="24" y1="28" x2="30" y2="36" stroke="#FCA5A5" stroke-width="1"/>
+            <line x1="48" y1="28" x2="42" y2="36" stroke="#FCA5A5" stroke-width="1"/>
+            <!-- cheese -->
+            <path d="M10 36 L62 36 L60 42 L12 42 Z" fill="#FCD34D" stroke="#D97706" stroke-width="1.2"/>
+            <!-- bottom bread -->
+            <ellipse cx="36" cy="46" rx="28" ry="8" fill="#FBBF24" stroke="#B45309" stroke-width="1.5"/>
+            <ellipse cx="36" cy="50" rx="28" ry="6" fill="#F59E0B" stroke="#B45309" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <div class="mc-mid">
+          <span class="mc-arrow">→</span>
+          <select class="mc-select" id="msel2" onchange="onMatchSelect(2)">
+            <option value="">-- Chọn từ --</option>
+            <option value="Truck">Truck</option>
+            <option value="Tea">Tea</option>
+            <option value="Gloves">Gloves</option>
+            <option value="Sandwich">Sandwich</option>
+            <option value="Curly">Curly</option>
+          </select>
+        </div>
+        <button class="mc-clear hidden" id="mclr2" onclick="clearMatch(2)" title="Bỏ chọn">✕</button>
+      </div>
+
+      <!-- Row 3: Tea SVG -->
+      <div class="match-row" id="mrow3">
+        <div class="mc-img">
+          <div class="mc-num">3</div>
+          <svg width="72" height="62" viewBox="0 0 72 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- saucer -->
+            <ellipse cx="34" cy="56" rx="26" ry="5" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="1.2"/>
+            <!-- cup body -->
+            <path d="M12 28 L16 52 Q16 54 18 54 L50 54 Q52 54 52 52 L56 28 Z" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.5"/>
+            <!-- tea liquid inside -->
+            <path d="M15 36 L18 52 Q18 53 20 53 L48 53 Q50 53 50 52 L53 36 Z" fill="#92400E" opacity="0.55"/>
+            <!-- steam wisps -->
+            <path d="M26 18 Q24 13 26 8 Q28 3 26 0" stroke="#9CA3AF" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M34 20 Q32 14 34 9 Q36 4 34 1" stroke="#9CA3AF" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M42 18 Q40 13 42 8 Q44 3 42 0" stroke="#9CA3AF" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- handle -->
+            <path d="M56 34 Q68 34 68 42 Q68 50 56 50" stroke="#94A3B8" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- tea bag string -->
+            <line x1="34" y1="28" x2="34" y2="44" stroke="#78350F" stroke-width="1.5"/>
+            <!-- tea bag tag -->
+            <rect x="30" y="25" width="8" height="6" rx="1" fill="#FEF3C7" stroke="#92400E" stroke-width="1"/>
+            <!-- tea bag in cup -->
+            <rect x="29" y="44" width="10" height="8" rx="2" fill="#78350F" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="mc-mid">
+          <span class="mc-arrow">→</span>
+          <select class="mc-select" id="msel3" onchange="onMatchSelect(3)">
+            <option value="">-- Chọn từ --</option>
+            <option value="Truck">Truck</option>
+            <option value="Tea">Tea</option>
+            <option value="Gloves">Gloves</option>
+            <option value="Sandwich">Sandwich</option>
+            <option value="Curly">Curly</option>
+          </select>
+        </div>
+        <button class="mc-clear hidden" id="mclr3" onclick="clearMatch(3)" title="Bỏ chọn">✕</button>
+      </div>
+
+      <!-- Row 4: Curly hair SVG -->
+      <div class="match-row" id="mrow4">
+        <div class="mc-img">
+          <div class="mc-num">4</div>
+          <svg width="72" height="62" viewBox="0 0 72 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- neck -->
+            <rect x="29" y="44" width="14" height="12" rx="4" fill="#FDDCB0"/>
+            <!-- shoulders -->
+            <path d="M14 62 Q14 52 22 50 L50 50 Q58 52 58 62 Z" fill="#818CF8"/>
+            <!-- face -->
+            <ellipse cx="36" cy="32" rx="16" ry="18" fill="#FDDCB0" stroke="#F0D0A0" stroke-width="1"/>
+            <!-- curly hair - back layer (behind face) -->
+            <path d="M20 26 Q14 10 22 6 Q26 4 28 10 Q24 8 22 14 Q20 20 24 26" fill="#7C2D12" stroke="#7C2D12" stroke-width="0.5"/>
+            <path d="M52 26 Q58 10 50 6 Q46 4 44 10 Q48 8 50 14 Q52 20 48 26" fill="#7C2D12" stroke="#7C2D12" stroke-width="0.5"/>
+            <!-- curly hair top -->
+            <path d="M20 20 Q18 8 26 4 Q30 2 32 8 Q28 6 26 12 Q30 6 34 8 Q36 10 34 16 Q38 8 42 10 Q44 16 40 18 Q46 10 50 14 Q52 20 48 24 Q52 16 54 20" fill="#92400E" stroke="#78350F" stroke-width="0.8"/>
+            <!-- curl details -->
+            <path d="M22 14 Q20 20 24 22 Q22 16 26 16" stroke="#78350F" stroke-width="1.2" fill="none"/>
+            <path d="M46 16 Q50 20 48 24 Q46 18 42 20" stroke="#78350F" stroke-width="1.2" fill="none"/>
+            <path d="M30 6 Q28 12 32 14 Q30 8 34 10" stroke="#78350F" stroke-width="1.2" fill="none"/>
+            <!-- eyes -->
+            <ellipse cx="29" cy="32" rx="3" ry="3.5" fill="white"/>
+            <ellipse cx="43" cy="32" rx="3" ry="3.5" fill="white"/>
+            <circle cx="29" cy="33" r="2" fill="#3B1F0A"/>
+            <circle cx="43" cy="33" r="2" fill="#3B1F0A"/>
+            <circle cx="30" cy="32" r="0.7" fill="white"/>
+            <circle cx="44" cy="32" r="0.7" fill="white"/>
+            <!-- eyebrows -->
+            <path d="M26 28 Q29 26 32 28" stroke="#7C2D12" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M40 28 Q43 26 46 28" stroke="#7C2D12" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <!-- nose -->
+            <ellipse cx="36" cy="37" rx="2" ry="1.2" fill="#F0BF90"/>
+            <!-- smile -->
+            <path d="M30 42 Q36 47 42 42" stroke="#E0905A" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            <!-- long curly hair sides falling down -->
+            <path d="M20 28 Q12 36 14 46 Q16 54 22 54 Q18 48 18 40 Q18 32 22 30" fill="#92400E" stroke="#78350F" stroke-width="0.8"/>
+            <path d="M52 28 Q60 36 58 46 Q56 54 50 54 Q54 48 54 40 Q54 32 50 30" fill="#92400E" stroke="#78350F" stroke-width="0.8"/>
+            <!-- extra curls on sides -->
+            <path d="M14 40 Q10 44 14 48 Q16 44 14 40" fill="#78350F"/>
+            <path d="M58 40 Q62 44 58 48 Q56 44 58 40" fill="#78350F"/>
+          </svg>
+        </div>
+        <div class="mc-mid">
+          <span class="mc-arrow">→</span>
+          <select class="mc-select" id="msel4" onchange="onMatchSelect(4)">
+            <option value="">-- Chọn từ --</option>
+            <option value="Truck">Truck</option>
+            <option value="Tea">Tea</option>
+            <option value="Gloves">Gloves</option>
+            <option value="Sandwich">Sandwich</option>
+            <option value="Curly">Curly</option>
+          </select>
+        </div>
+        <button class="mc-clear hidden" id="mclr4" onclick="clearMatch(4)" title="Bỏ chọn">✕</button>
+      </div>
+
+      <!-- Row 5: Truck SVG -->
+      <div class="match-row" id="mrow5">
+        <div class="mc-img">
+          <div class="mc-num">5</div>
+          <svg width="72" height="62" viewBox="0 0 72 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- cargo box -->
+            <rect x="2" y="18" width="44" height="28" rx="3" fill="#3B82F6" stroke="#1D4ED8" stroke-width="1.5"/>
+            <!-- cargo box detail lines -->
+            <line x1="16" y1="18" x2="16" y2="46" stroke="#1D4ED8" stroke-width="1" opacity="0.4"/>
+            <line x1="30" y1="18" x2="30" y2="46" stroke="#1D4ED8" stroke-width="1" opacity="0.4"/>
+            <line x1="2"  y1="32" x2="46" y2="32" stroke="#1D4ED8" stroke-width="1" opacity="0.4"/>
+            <!-- cab -->
+            <path d="M46 30 L46 46 L70 46 L70 36 Q70 30 64 28 L54 26 Q50 26 48 28 Z" fill="#60A5FA" stroke="#1D4ED8" stroke-width="1.5"/>
+            <!-- windshield -->
+            <path d="M50 30 L50 38 L68 38 L68 36 Q68 32 63 30 Z" fill="#BAE6FD" stroke="#7DD3FC" stroke-width="1"/>
+            <!-- cab door -->
+            <rect x="54" y="38" width="12" height="8" rx="1.5" fill="#93C5FD" stroke="#1D4ED8" stroke-width="1"/>
+            <!-- door handle -->
+            <rect x="63" y="41" width="3" height="2" rx="1" fill="#1D4ED8"/>
+            <!-- wheels -->
+            <circle cx="16" cy="48" r="8" fill="#1F2937" stroke="#111827" stroke-width="1.5"/>
+            <circle cx="16" cy="48" r="4" fill="#6B7280"/>
+            <circle cx="16" cy="48" r="1.5" fill="#D1D5DB"/>
+            <circle cx="56" cy="48" r="8" fill="#1F2937" stroke="#111827" stroke-width="1.5"/>
+            <circle cx="56" cy="48" r="4" fill="#6B7280"/>
+            <circle cx="56" cy="48" r="1.5" fill="#D1D5DB"/>
+            <!-- undercarriage -->
+            <rect x="2" y="44" width="68" height="4" rx="2" fill="#374151"/>
+            <!-- headlight -->
+            <ellipse cx="69" cy="34" rx="2" ry="3" fill="#FDE68A" stroke="#F59E0B" stroke-width="1"/>
+            <!-- exhaust pipe -->
+            <rect x="44" y="16" width="4" height="12" rx="2" fill="#6B7280" stroke="#4B5563" stroke-width="1"/>
+            <ellipse cx="46" cy="16" rx="2" ry="1.5" fill="#9CA3AF"/>
+          </svg>
+        </div>
+        <div class="mc-mid">
+          <span class="mc-arrow">→</span>
+          <select class="mc-select" id="msel5" onchange="onMatchSelect(5)">
+            <option value="">-- Chọn từ --</option>
+            <option value="Truck">Truck</option>
+            <option value="Tea">Tea</option>
+            <option value="Gloves">Gloves</option>
+            <option value="Sandwich">Sandwich</option>
+            <option value="Curly">Curly</option>
+          </select>
+        </div>
+        <button class="mc-clear hidden" id="mclr5" onclick="clearMatch(5)" title="Bỏ chọn">✕</button>
+      </div>
+
+    </div><!-- /match-rows -->
+
+    <div class="match-hint" id="matchHint">👆 Bấm vào ▼ để chọn từ tương ứng với mỗi hình. Bấm ✕ để đổi lại.</div>
+    <div class="match-result-row" id="matchResults"></div>
+    <div class="feedback" id="fbMatch"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       PART II – FIND ONE MISTAKE
+  ══════════════════════════════════════ -->
+  <div class="section-card sec-II">
+    <div class="sec-head">
+      <div class="sec-icon">🔍</div>
+      <div class="sec-title">II. Find ONE mistake and correct</div>
+    </div>
+    <p class="sec-desc">📌 Tìm <strong>MỘT</strong> lỗi sai trong mỗi câu và viết từ đúng vào ô. Gạch chân từ sai, viết từ đúng.</p>
+
+    <!-- II.1 -->
+    <div class="qblock" id="q6">
+      <div class="q-text"><span class="q-label">1</span><span class="q-text-inner">Tìm lỗi sai và sửa:</span></div>
+      <div class="sentence-box">Are <span style="color:#DC2626;text-decoration:underline wavy;">these</span> your <u>kite</u>?</div>
+      <div class="err-label">✏️ Từ sai là: <strong>"___"</strong> → Sửa lại là:</div>
+      <div class="err-input-row">
+        <span class="err-field-label">Từ sai:</span>
+        <input class="err-field" id="wrong6" type="text" placeholder="từ sai..." autocomplete="off" oninput="checkErrInput(6)">
+        <span class="err-field-label">→ Sửa thành:</span>
+        <input class="err-field" id="correct6" type="text" placeholder="từ đúng..." autocomplete="off" oninput="checkErrInput(6)">
+      </div>
+      <div class="feedback" id="fb6"></div>
+    </div>
+
+    <!-- II.2 -->
+    <div class="qblock" id="q7">
+      <div class="q-text"><span class="q-label">2</span><span class="q-text-inner">Tìm lỗi sai và sửa:</span></div>
+      <div class="sentence-box">There is <u>many</u> cookies.</div>
+      <div class="err-label">✏️ Từ sai là: <strong>"___"</strong> → Sửa lại là:</div>
+      <div class="err-input-row">
+        <span class="err-field-label">Từ sai:</span>
+        <input class="err-field" id="wrong7" type="text" placeholder="từ sai..." autocomplete="off" oninput="checkErrInput(7)">
+        <span class="err-field-label">→ Sửa thành:</span>
+        <input class="err-field" id="correct7" type="text" placeholder="từ đúng..." autocomplete="off" oninput="checkErrInput(7)">
+      </div>
+      <div class="feedback" id="fb7"></div>
+    </div>
+
+    <!-- II.3 -->
+    <div class="qblock" id="q8">
+      <div class="q-text"><span class="q-label">3</span><span class="q-text-inner">Tìm lỗi sai và sửa:</span></div>
+      <div class="sentence-box">Do you <u>likes</u> milk?</div>
+      <div class="err-label">✏️ Từ sai là: <strong>"___"</strong> → Sửa lại là:</div>
+      <div class="err-input-row">
+        <span class="err-field-label">Từ sai:</span>
+        <input class="err-field" id="wrong8" type="text" placeholder="từ sai..." autocomplete="off" oninput="checkErrInput(8)">
+        <span class="err-field-label">→ Sửa thành:</span>
+        <input class="err-field" id="correct8" type="text" placeholder="từ đúng..." autocomplete="off" oninput="checkErrInput(8)">
+      </div>
+      <div class="feedback" id="fb8"></div>
+    </div>
+
+    <!-- II.4 -->
+    <div class="qblock" id="q9">
+      <div class="q-text"><span class="q-label">4</span><span class="q-text-inner">Tìm lỗi sai và sửa:</span></div>
+      <div class="sentence-box">I <u>wearing</u> brown shoes.</div>
+      <div class="err-label">✏️ Từ sai là: <strong>"___"</strong> → Sửa lại là:</div>
+      <div class="err-input-row">
+        <span class="err-field-label">Từ sai:</span>
+        <input class="err-field" id="wrong9" type="text" placeholder="từ sai..." autocomplete="off" oninput="checkErrInput(9)">
+        <span class="err-field-label">→ Sửa thành:</span>
+        <input class="err-field" id="correct9" type="text" placeholder="từ đúng..." autocomplete="off" oninput="checkErrInput(9)">
+      </div>
+      <div class="feedback" id="fb9"></div>
+    </div>
+
+    <!-- II.5 -->
+    <div class="qblock" id="q10">
+      <div class="q-text"><span class="q-label">5</span><span class="q-text-inner">Tìm lỗi sai và sửa:</span></div>
+      <div class="sentence-box">Those <u>is</u> my white hat.</div>
+      <div class="err-label">✏️ Từ sai là: <strong>"___"</strong> → Sửa lại là:</div>
+      <div class="err-input-row">
+        <span class="err-field-label">Từ sai:</span>
+        <input class="err-field" id="wrong10" type="text" placeholder="từ sai..." autocomplete="off" oninput="checkErrInput(10)">
+        <span class="err-field-label">→ Sửa thành:</span>
+        <input class="err-field" id="correct10" type="text" placeholder="từ đúng..." autocomplete="off" oninput="checkErrInput(10)">
+      </div>
+      <div class="feedback" id="fb10"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       PART III – READ AND COMPLETE
+  ══════════════════════════════════════ -->
+  <div class="section-card sec-III">
+    <div class="sec-head">
+      <div class="sec-icon">💬</div>
+      <div class="sec-title">III. Read and complete</div>
+    </div>
+    <p class="sec-desc">📌 Bấm vào ô trống (1)–(5), rồi bấm từ trong bảng từ để điền vào.</p>
+
+    <div class="word-bank">
+      <div class="wb-title">📦 Bảng từ (Word Bank):</div>
+      <div class="wb-chips">
+        <span class="wb-chip" id="chip-favorite" onclick="fillBlank('favorite')">favorite</span>
+        <span class="wb-chip" id="chip-are"      onclick="fillBlank('are')">are</span>
+        <span class="wb-chip" id="chip-like"     onclick="fillBlank('like')">like</span>
+        <span class="wb-chip" id="chip-do"       onclick="fillBlank('do')">Do</span>
+        <span class="wb-chip" id="chip-dress"    onclick="fillBlank('dress')">dress</span>
+      </div>
+    </div>
+
+    <div class="dialogue-box">
+      <div class="d-line">
+        <span class="d-speaker">Jane:</span>
+        <span class="d-text">Hi Tom. You look great today. What</span>
+        <span class="d-blank" id="blank11" data-n="11" onclick="activateBlank(this)">(1) ___</span>
+        <span class="d-text">you wearing?</span>
+      </div>
+      <div class="d-line">
+        <span class="d-speaker">Tom:</span>
+        <span class="d-text">Thanks. I'm wearing a white T-shirt, blue jeans and black shoes. What about you?</span>
+      </div>
+      <div class="d-line">
+        <span class="d-speaker">Jane:</span>
+        <span class="d-text">I'm wearing a pink</span>
+        <span class="d-blank" id="blank12" data-n="12" onclick="activateBlank(this)">(2) ___</span>
+        <span class="d-text">and a white hat.</span>
+      </div>
+      <div class="d-line">
+        <span class="d-speaker">Tom:</span>
+        <span class="d-text">Great. What's your</span>
+        <span class="d-blank" id="blank13" data-n="13" onclick="activateBlank(this)">(3) ___</span>
+        <span class="d-text">food?</span>
+      </div>
+      <div class="d-line">
+        <span class="d-speaker">Jane:</span>
+        <span class="d-text">I</span>
+        <span class="d-blank" id="blank14" data-n="14" onclick="activateBlank(this)">(4) ___</span>
+        <span class="d-text">chicken and vegetables.</span>
+      </div>
+      <div class="d-line">
+        <span class="d-speaker">Tom:</span>
+        <span class="d-blank" id="blank15" data-n="15" onclick="activateBlank(this)">(5) ___</span>
+        <span class="d-text">you like coconut water?</span>
+      </div>
+      <div class="d-line">
+        <span class="d-speaker">Jane:</span>
+        <span class="d-text">Not really.</span>
+      </div>
+    </div>
+    <div class="feedback" id="fb11"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       PART V – REORDER
+  ══════════════════════════════════════ -->
+  <div class="section-card sec-V">
+    <div class="sec-head">
+      <div class="sec-icon">🔀</div>
+      <div class="sec-title">V. Reorder the words</div>
+    </div>
+    <p class="sec-desc">📌 Bấm vào các từ theo đúng thứ tự để tạo câu hoàn chỉnh. Bấm từ đã chọn để bỏ chọn.</p>
+
+    <!-- V.1 -->
+    <div class="qblock" id="q16">
+      <div class="q-text"><span class="q-label">1</span><span class="q-text-inner">eyes / has / round / She → _______________________.</span></div>
+      <div class="word-chips-row" id="chips16">
+        <span class="wchip" onclick="addWord(this,16,'eyes')">eyes</span>
+        <span class="wchip" onclick="addWord(this,16,'has')">has</span>
+        <span class="wchip" onclick="addWord(this,16,'round')">round</span>
+        <span class="wchip" onclick="addWord(this,16,'She')">She</span>
+      </div>
+      <div class="answer-box" id="box16"><span class="box-hint">Bấm các từ để sắp xếp...</span></div>
+      <div class="feedback" id="fb16"></div>
+    </div>
+
+    <!-- V.2 -->
+    <div class="qblock" id="q17">
+      <div class="q-text"><span class="q-label">2</span><span class="q-text-inner">a / I / robot / want → _______________________.</span></div>
+      <div class="word-chips-row" id="chips17">
+        <span class="wchip" onclick="addWord(this,17,'a')">a</span>
+        <span class="wchip" onclick="addWord(this,17,'I')">I</span>
+        <span class="wchip" onclick="addWord(this,17,'robot')">robot</span>
+        <span class="wchip" onclick="addWord(this,17,'want')">want</span>
+      </div>
+      <div class="answer-box" id="box17"><span class="box-hint">Bấm các từ để sắp xếp...</span></div>
+      <div class="feedback" id="fb17"></div>
+    </div>
+
+    <!-- V.3 -->
+    <div class="qblock" id="q18">
+      <div class="q-text"><span class="q-label">3</span><span class="q-text-inner">wearing / Are / yellow / skirt / you / a → _______________________?</span></div>
+      <div class="word-chips-row" id="chips18">
+        <span class="wchip" onclick="addWord(this,18,'wearing')">wearing</span>
+        <span class="wchip" onclick="addWord(this,18,'Are')">Are</span>
+        <span class="wchip" onclick="addWord(this,18,'yellow')">yellow</span>
+        <span class="wchip" onclick="addWord(this,18,'skirt')">skirt</span>
+        <span class="wchip" onclick="addWord(this,18,'you')">you</span>
+        <span class="wchip" onclick="addWord(this,18,'a')">a</span>
+      </div>
+      <div class="answer-box" id="box18"><span class="box-hint">Bấm các từ để sắp xếp...</span></div>
+      <div class="feedback" id="fb18"></div>
+    </div>
+  </div>
+
+  <!-- SUBMIT -->
+  <div class="submit-wrap">
+    <button class="btn-submit" onclick="submitExam()">🎯 Nộp Bài</button>
+    <div class="submit-warn" id="submitWarn"></div>
+  </div>
+
+  <!-- ANSWER KEY -->
+  <div class="ak-section" id="akSection">
+    <div class="ak-heading">📋 Đáp Án Chi Tiết</div>
+  </div>
+</div>
+
+<!-- MODAL -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <span class="m-emoji" id="mEmoji">🎉</span>
+    <div class="m-title" id="mTitle">Xuất sắc!</div>
+    <div class="m-score" id="mScore">10/10</div>
+    <div class="m-stars" id="mStars">⭐⭐⭐⭐⭐</div>
+    <div class="m-msg"   id="mMsg"></div>
+    <div class="m-breakdown" id="mBreak"></div>
+    <button class="btn-review" onclick="closeModal()">📋 Xem Đáp Án</button>
+    <button class="btn-retry"  onclick="location.reload()">🔄 Làm Lại</button>
+  </div>
+</div>
+<div class="cfall" id="cfall"></div>
+
+<script>
+// ═══════════════════════════════════════════
+// ANSWER DATA
+// ═══════════════════════════════════════════
+
+// Matching: img number → correct word
+const MATCH_CORRECT = {
+  1:'Gloves',    // 🧤 gloves
+  2:'Sandwich',  // 🥪 sandwich
+  3:'Tea',       // 🍵 tea
+  4:'Curly',     // 👩‍🦱 curly hair
+  5:'Truck',     // 🚛 truck
+};
+
+// Error correction: q# → {wrong, correct, explanation}
+const ERR_CORRECT = {
+  6:  {wrong:'kite',    correct:'kites',    explain:'Dùng "these" (số nhiều) nên danh từ phải là số nhiều: kites.'},
+  7:  {wrong:'is',      correct:'are',      explain:'"There are many cookies." — cookies là số nhiều, dùng "are". Hoặc sửa "many" → "some" nhưng lỗi chính là động từ.'},
+  8:  {wrong:'likes',   correct:'like',     explain:'"Do you like...?" — sau "do" dùng động từ nguyên thể: like.'},
+  9:  {wrong:'wearing', correct:'am wearing', explain:'"I am wearing..." — thiếu động từ "am".'},
+  10: {wrong:'is',      correct:'are',      explain:'"Those are..." — "those" là số nhiều nên dùng "are".'},
+};
+
+// Dialogue blanks: blank# → correct word
+const BLANK_CORRECT = {
+  11:'are',      // What are you wearing?
+  12:'dress',    // pink dress
+  13:'favorite', // favorite food
+  14:'like',     // I like chicken
+  15:'Do',       // Do you like...?
+};
+const BLANK_EXPLAIN = {
+  11:'What ARE you wearing? (are + you = hiện tại tiếp diễn)',
+  12:'I\'m wearing a pink DRESS (váy liền thân)',
+  13:'What\'s your FAVORITE food? (đồ ăn yêu thích)',
+  14:'I LIKE chicken (ngôi 1 số ít: like)',
+  15:'DO you like coconut water? (câu hỏi Yes/No dùng Do)',
+};
+
+// Reorder
+const REORDER_CORRECT = {
+  16:['She','has','round','eyes'],
+  17:['I','want','a','robot'],
+  18:['Are','you','wearing','a','yellow','skirt'],
+};
+const REORDER_DISPLAY = {
+  16:'She has round eyes.',
+  17:'I want a robot.',
+  18:'Are you wearing a yellow skirt?',
+};
+
+const TOTAL = 18;
+const SECTIONS = {
+  'Phần I – Match': [1,2,3,4,5],
+  'Phần II – Find mistake': [6,7,8,9,10],
+  'Phần III – Complete dialogue': [11,12,13,14,15],
+  'Phần V – Reorder': [16,17,18],
+};
+
+let ua = {};
+let submitted = false;
+let reorderState = {16:[],17:[],18:[]};
+
+// Match state
+let matchUserPairs = {}; // imgId → word chosen by user
+
+// Dialogue blank state
+let activeBlankN = null;
+let blankValues = {}; // blank# → word
+
+(function init(){
+  buildDots();
+})();
+
+function buildDots(){
+  const row = document.getElementById('dotRow');
+  for(let i=1;i<=TOTAL;i++){
+    const d=document.createElement('div');
+    d.className='pdot';d.id='dot'+i;d.textContent=i;
+    // map display q# to qblock id
+    d.onclick=()=>{
+      const el=document.getElementById('q'+(i<=5?i:i<=10?(i+0):i<=15?('blank'+(i+5)):'q'+i));
+      const target = i<=5 ? document.querySelector('.sec-I') :
+                     i<=10 ? document.getElementById('q'+(i)) :
+                     i<=15 ? document.getElementById('blank'+(i)) :
+                     document.getElementById('q'+(i));
+      (target||document.querySelector('.sec-I')).scrollIntoView({behavior:'smooth',block:'center'});
+    };
+    row.appendChild(d);
+  }
+}
+
+function updateProgress(){
+  const done = Object.keys(ua).filter(k=>ua[k]!==undefined).length;
+  document.getElementById('progBar').style.width=(done/TOTAL*100)+'%';
+  document.getElementById('progText').textContent=done+' / '+TOTAL+' câu';
+  for(let i=1;i<=TOTAL;i++){
+    const d=document.getElementById('dot'+i);
+    if(d) d.className='pdot'+(ua[i]!==undefined?' done':'');
+  }
+}
+
+// ═══════════════════════════════════════════
+// PART I – MATCHING
+// ═══════════════════════════════════════════
+// ═══════════════════════════════════════════
+// PART I – MATCHING (dropdown style)
+// ═══════════════════════════════════════════
+function onMatchSelect(n){
+  if(submitted) return;
+  const sel = document.getElementById('msel'+n);
+  const val = sel.value;
+  const row = document.getElementById('mrow'+n);
+  const clr = document.getElementById('mclr'+n);
+
+  if(!val){
+    clearMatch(n);
+    return;
+  }
+
+  // Store answer
+  matchUserPairs[n] = val;
+  ua[n] = val;
+
+  // Visual update
+  sel.classList.add('chosen');
+  row.classList.add('row-done');
+  clr.classList.remove('hidden');
+
+  const matched = Object.values(matchUserPairs).filter(Boolean).length;
+  document.getElementById('matchHint').textContent =
+    matched === 5 ? '🎉 Tuyệt! Đã nối xong tất cả! Kiểm tra lại nếu muốn.' : `✅ Đã nối ${matched}/5. Tiếp tục nhé!`;
+
+  updateProgress();
+}
+
+function clearMatch(n){
+  if(submitted) return;
+  const sel = document.getElementById('msel'+n);
+  const row = document.getElementById('mrow'+n);
+  const clr = document.getElementById('mclr'+n);
+
+  delete matchUserPairs[n];
+  delete ua[n];
+
+  sel.value = '';
+  sel.classList.remove('chosen');
+  row.classList.remove('row-done');
+  clr.classList.add('hidden');
+
+  const matched = Object.values(matchUserPairs).filter(Boolean).length;
+  document.getElementById('matchHint').textContent =
+    matched === 0 ? '👆 Bấm vào ▼ để chọn từ tương ứng với mỗi hình. Bấm ✕ để đổi lại.'
+                  : `✅ Đã nối ${matched}/5. Tiếp tục nhé!`;
+
+  updateProgress();
+}
+
+// ═══════════════════════════════════════════
+// PART II – ERROR CORRECTION
+// ═══════════════════════════════════════════
+function checkErrInput(q){
+  if(submitted) return;
+  const w=(document.getElementById('wrong'+q).value||'').trim();
+  const c=(document.getElementById('correct'+q).value||'').trim();
+  if(w||c){
+    ua[q]={wrong:w,correct:c};
+    document.getElementById('q'+q).classList.add('answered');
+  } else {
+    delete ua[q];
+    document.getElementById('q'+q).classList.remove('answered');
+  }
+  updateProgress();
+}
+
+// ═══════════════════════════════════════════
+// PART III – DIALOGUE BLANKS
+// ═══════════════════════════════════════════
+function activateBlank(el){
+  if(submitted) return;
+  // deactivate all
+  document.querySelectorAll('.d-blank').forEach(b=>b.classList.remove('active'));
+  activeBlankN = +el.dataset.n;
+  el.classList.add('active');
+}
+
+function fillBlank(word){
+  if(submitted) return;
+  if(activeBlankN===null){
+    // pick first empty blank
+    for(let n=11;n<=15;n++){
+      if(!blankValues[n]){activeBlankN=n;break;}
+    }
+  }
+  if(activeBlankN===null) return;
+
+  // un-use old chip for this blank if exists
+  if(blankValues[activeBlankN]){
+    const old=blankValues[activeBlankN];
+    const oldChip=document.getElementById('chip-'+old.toLowerCase());
+    if(oldChip) oldChip.classList.remove('used');
+  }
+
+  blankValues[activeBlankN]=word;
+  ua[activeBlankN]=word;
+
+  // update blank display
+  const blank=document.getElementById('blank'+activeBlankN);
+  blank.textContent='('+( activeBlankN-10)+') '+word;
+  blank.classList.add('filled');
+  blank.classList.remove('active');
+
+  // mark chip used
+  const chip=document.getElementById('chip-'+word.toLowerCase());
+  if(chip) chip.classList.add('used');
+
+  // check if all filled
+  let filled=0;
+  for(let n=11;n<=15;n++) if(blankValues[n]) filled++;
+  document.getElementById('q'+activeBlankN)?.classList?.add('answered');
+
+  activeBlankN=null;
+  updateProgress();
+}
+
+// ═══════════════════════════════════════════
+// PART V – REORDER
+// ═══════════════════════════════════════════
+function addWord(chip,qn,word){
+  if(submitted) return;
+  chip.classList.add('used');
+  reorderState[qn].push(word);
+  renderBox(qn);
+  ua[qn]=[...reorderState[qn]];
+  document.getElementById('q'+qn).classList.add('answered');
+  updateProgress();
+}
+
+function removeWord(qn,idx){
+  if(submitted) return;
+  const word=reorderState[qn].splice(idx,1)[0];
+  document.querySelectorAll('#chips'+qn+' .wchip').forEach(c=>{
+    if(c.textContent===word && c.classList.contains('used')){c.classList.remove('used');return;}
+  });
+  renderBox(qn);
+  if(reorderState[qn].length===0){delete ua[qn];document.getElementById('q'+qn).classList.remove('answered');}
+  else ua[qn]=[...reorderState[qn]];
+  updateProgress();
+}
+
+function renderBox(qn){
+  const box=document.getElementById('box'+qn);
+  if(reorderState[qn].length===0){box.innerHTML='<span class="box-hint">Bấm các từ để sắp xếp...</span>';box.classList.remove('has-content');return;}
+  box.classList.add('has-content');
+  box.innerHTML=reorderState[qn].map((w,i)=>`<span class="placed-word" onclick="removeWord(${qn},${i})">${w}</span>`).join('');
+}
+
+function checkReorder(qn){
+  const c=REORDER_CORRECT[qn], u=reorderState[qn];
+  if(u.length!==c.length) return false;
+  return u.every((w,i)=>w.toLowerCase()===c[i].toLowerCase());
+}
+
+// ═══════════════════════════════════════════
+// SUBMIT
+// ═══════════════════════════════════════════
+function submitExam(){
+  if(submitted) return;
+  const unanswered=[];
+  for(let i=1;i<=TOTAL;i++) if(ua[i]===undefined) unanswered.push(i);
+  if(unanswered.length>10){
+    document.getElementById('submitWarn').textContent=`⚠️ Bạn còn ${unanswered.length} câu chưa làm. Cố gắng thêm nhé!`;
+    return;
+  }
+  document.getElementById('submitWarn').textContent='';
+  submitted=true;
+
+  let total=0;
+  const secScores={};
+
+  // Part I Match
+  let s1=0;
+  for(let i=1;i<=5;i++){
+    if(matchUserPairs[i]===MATCH_CORRECT[i]) s1++;
+  }
+  secScores['Phần I – Match']=`${s1}/5`;
+  total+=s1;
+
+  // Part II Error
+  let s2=0;
+  for(let q=6;q<=10;q++){
+    if(checkErrAnswer(q)) s2++;
+  }
+  secScores['Phần II – Find mistake']=`${s2}/5`;
+  total+=s2;
+
+  // Part III Blanks
+  let s3=0;
+  for(let n=11;n<=15;n++){
+    if((blankValues[n]||'').toLowerCase()===(BLANK_CORRECT[n]||'').toLowerCase()) s3++;
+  }
+  secScores['Phần III – Complete dialogue']=`${s3}/5`;
+  total+=s3;
+
+  // Part V Reorder
+  let s5=0;
+  for(let q=16;q<=18;q++) if(checkReorder(q)) s5++;
+  secScores['Phần V – Reorder']=`${s5}/3`;
+  total+=s5;
+
+  showModal(total,secScores);
+  setTimeout(showAnswerKey,500);
+}
+
+function checkErrAnswer(q){
+  const ans=ERR_CORRECT[q];
+  const w=(document.getElementById('wrong'+q).value||'').trim().toLowerCase();
+  const c=(document.getElementById('correct'+q).value||'').trim().toLowerCase();
+  const wOk = ans.wrong.toLowerCase().split('/').some(opt=>opt===w);
+  const cOk = ans.correct.toLowerCase().split('/').some(opt=>opt===c);
+  return wOk && cOk;
+}
+
+// ═══════════════════════════════════════════
+// MODAL
+// ═══════════════════════════════════════════
+function showModal(correct,secScores){
+  const pct=correct/TOTAL;
+  let emoji,title,msg,stars;
+  if(pct>=.9){emoji='🏆';title='Xuất sắc! Tuyệt vời!';msg='Em làm bài rất giỏi! Em là ngôi sao của lớp! ✨';stars='⭐⭐⭐⭐⭐';}
+  else if(pct>=.7){emoji='😊';title='Giỏi lắm!';msg='Em làm bài tốt! Cố gắng thêm nhé! 💪';stars='⭐⭐⭐⭐';}
+  else if(pct>=.5){emoji='🙂';title='Khá tốt!';msg='Ôn tập thêm rồi thử lại nhé em! 📚';stars='⭐⭐⭐';}
+  else{emoji='😅';title='Cố gắng nhé!';msg='Đừng nản lòng! Ôn luyện thêm nào! 🌈';stars='⭐⭐';}
+  document.getElementById('mEmoji').textContent=emoji;
+  document.getElementById('mTitle').textContent=title;
+  document.getElementById('mScore').textContent=`${correct}/${TOTAL}`;
+  document.getElementById('mStars').textContent=stars;
+  document.getElementById('mMsg').textContent=msg;
+  let html='';
+  for(const [s,v] of Object.entries(secScores)) html+=`<div class="m-row"><span>${s}</span><span class="m-sc">${v}</span></div>`;
+  html+=`<div class="m-row"><span>🎯 Tổng điểm (10)</span><span class="m-sc" style="font-size:17px">${(correct/TOTAL*10).toFixed(1)}/10</span></div>`;
+  document.getElementById('mBreak').innerHTML=html;
+  document.getElementById('overlay').classList.add('show');
+  if(pct>=0.7) launchConfetti();
+}
+
+function closeModal(){
+  document.getElementById('overlay').classList.remove('show');
+  document.getElementById('akSection').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// ═══════════════════════════════════════════
+// ANSWER KEY
+// ═══════════════════════════════════════════
+function showAnswerKey(){
+  document.getElementById('akSection').classList.add('show');
+
+  // Part I Match
+  const resultsDiv=document.getElementById('matchResults');
+  resultsDiv.classList.add('show');
+  const imgEmojis={1:'🧤',2:'🥪',3:'🍵',4:'👩‍🦱',5:'🚛'};
+  for(let i=1;i<=5;i++){
+    const ok = matchUserPairs[i] === MATCH_CORRECT[i];
+    const row = document.getElementById('mrow'+i);
+    const sel = document.getElementById('msel'+i);
+    const clr = document.getElementById('mclr'+i);
+
+    // disable controls
+    sel.disabled = true;
+    clr.disabled = true;
+
+    // colour the row and select
+    row.classList.remove('row-done');
+    row.classList.add(ok ? 'review-ok' : 'review-err');
+    sel.classList.add(ok ? 'sel-ok' : 'sel-err');
+
+    // if wrong: show correct answer in select
+    if(!ok){
+      // add correct option highlighted
+      sel.value = MATCH_CORRECT[i];
+    }
+
+    const item=document.createElement('div');
+    item.className='match-result-item '+(ok?'ok':'err');
+    item.innerHTML=`${ok?'✅':'❌'} Hình ${i} ${imgEmojis[i]} → <strong>${MATCH_CORRECT[i]}</strong>${!ok&&matchUserPairs[i]?' (bạn chọn: <em>'+matchUserPairs[i]+'</em>)':!matchUserPairs[i]?' (chưa trả lời)':''}`;
+    resultsDiv.appendChild(item);
+  }
+  const fbM=document.getElementById('fbMatch');
+  const matchOk=[1,2,3,4,5].filter(i=>matchUserPairs[i]===MATCH_CORRECT[i]).length;
+  fbM.className=matchOk===5?'feedback ok':'feedback err';
+  fbM.textContent=matchOk===5?'✅ Tuyệt vời! Nối đúng tất cả 5 cặp!':'❌ Xem chi tiết từng cặp bên trên nhé.';
+
+  // Part II Error
+  for(let q=6;q<=10;q++){
+    const ans=ERR_CORRECT[q];
+    const ok=checkErrAnswer(q);
+    const wf=document.getElementById('wrong'+q);
+    const cf=document.getElementById('correct'+q);
+    wf.readOnly=true; cf.readOnly=true;
+    wf.classList.add(ok?'correct-f':'wrong-f');
+    cf.classList.add(ok?'correct-f':'wrong-f');
+    const fb=document.getElementById('fb'+q);
+    if(ok){
+      fb.className='feedback ok'; fb.textContent='✅ Đúng! '+ans.explain;
+    } else {
+      fb.className='feedback err';
+      fb.textContent=`❌ Chưa đúng. Sai: "${ans.wrong}" → Đúng: "${ans.correct}". ${ans.explain}`;
+    }
+  }
+
+  // Part III Blanks
+  for(let n=11;n<=15;n++){
+    const blank=document.getElementById('blank'+n);
+    blank.onclick=null;
+    const val=(blankValues[n]||'').toLowerCase();
+    const correct=(BLANK_CORRECT[n]||'').toLowerCase();
+    const ok=val===correct;
+    blank.classList.remove('active','filled');
+    blank.classList.add(ok?'correct-b':'wrong-b');
+    blank.textContent='('+(n-10)+') '+(ok?blankValues[n]:BLANK_CORRECT[n]);
+    if(!ok){
+      const fb=document.getElementById('fb11');
+      fb.className='feedback err';
+      fb.textContent='❌ Xem đáp án được tô màu trong hội thoại.';
+    }
+  }
+  // show collective feedback for part III
+  const correctBlanks=[11,12,13,14,15].filter(n=>(blankValues[n]||'').toLowerCase()===(BLANK_CORRECT[n]||'').toLowerCase()).length;
+  const fb11=document.getElementById('fb11');
+  if(correctBlanks===5){fb11.className='feedback ok';fb11.textContent='✅ Tuyệt vời! Điền đúng tất cả!';}
+  else{fb11.className='feedback err';fb11.textContent=`❌ Đúng ${correctBlanks}/5. Từ đúng được tô màu xanh trong hội thoại.`;}
+
+  // disable chips
+  document.querySelectorAll('.wb-chip').forEach(c=>c.style.pointerEvents='none');
+
+  // Part V Reorder
+  for(let q=16;q<=18;q++){
+    const ok=checkReorder(q);
+    const box=document.getElementById('box'+q);
+    document.querySelectorAll('#chips'+q+' .wchip').forEach(c=>c.style.pointerEvents='none');
+    box.querySelectorAll('.placed-word').forEach(pw=>pw.style.pointerEvents='none');
+    box.classList.add(ok?'correct-box':'wrong-box');
+    if(!ok){
+      const sp=document.createElement('div');
+      sp.className='correct-ans-text';
+      sp.textContent='✅ Đáp án đúng: '+REORDER_DISPLAY[q];
+      box.after(sp);
+    }
+    const fb=document.getElementById('fb'+q);
+    fb.className=ok?'feedback ok':'feedback err';
+    fb.textContent=ok?'✅ Đúng! '+REORDER_DISPLAY[q]:'❌ Chưa đúng. Đáp án: '+REORDER_DISPLAY[q];
+  }
+}
+
+// ═══════════════════════════════════════════
+// CONFETTI
+// ═══════════════════════════════════════════
+function launchConfetti(){
+  const el=document.getElementById('cfall');
+  const colors=['#EC4899','#8B5CF6','#0D9488','#F59E0B','#3B82F6','#10B981','#F97316'];
+  for(let i=0;i<80;i++){
+    setTimeout(()=>{
+      const c=document.createElement('div');c.className='confetto';
+      c.style.cssText=`left:${Math.random()*100}%;width:${Math.random()*10+6}px;height:${Math.random()*10+6}px;background:${colors[Math.floor(Math.random()*colors.length)]};border-radius:${Math.random()>.5?'50%':'3px'};animation:fall ${Math.random()*2+2}s linear forwards;animation-delay:${Math.random()*.4}s;`;
+      el.appendChild(c);setTimeout(()=>c.remove(),4000);
+    },i*28);
+  }
+}
+</script>
+</body>
+</html>
